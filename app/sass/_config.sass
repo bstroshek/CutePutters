@@ -1,0 +1,86 @@
+
+/*! * Start config */
+
+// USER VARIABLES SECTION
+
+$accent: #d60514 // Accent Color
+$fontsize: 16px // Body Font Size
+$textcolor: #000000 // Text Color
+$system: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
+$cera: 'Cera GR', sans-serif
+
+
+
+// IMPORT SECTION
+
+@import '../libs/bootstrap-reboot.css' // Bootstrap Reboot collection
+//@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss' // Bootstrap Breakpoints mixin
+// @import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
+// @import 'node_modules/bootstrap/scss/utilities/_sizing.scss' // Optional Bootstrap Utilites
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl)
+	@font-face
+		font-family: $fname
+		font-style: $fstyle
+		font-weight: $fweight
+		// font-display: swap // Uncomment to initially display system fonts
+		src: local($fname), url($furl) format('woff2')
+
+@include font('Cera GR', normal, 400, '../fonts/Cera GR.woff2')
+@include font('Cera GR Light', thin, 200, '../fonts/Cera GR Light.woff2')
+@include font('Cera GR Medium', medium, 500, '../fonts/Cera GR Medium.woff2')
+@include font('Cera GR Bold', bold, 700, '../fonts/Cera GR Bold.woff2')
+
+@include font('Lucida Grande', normal, 400, '../fonts/lucida_grande-webfont.woff2')
+@include font('Lucida Grande Bold', bold, 700, '../fonts/lucida_grande_bold-webfont.woff2')
+
+@include font('RODUSsquare300', normal, 400, '../fonts/rodussquare700.woff2')
+@include font('RODUSsquare700', normal, 400, '../fonts/rodussquare700.woff2')
+
+// GENERAL DOCUMENT STYLES
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+body
+	font-family: $cera
+	font-size: $fontsize
+	min-width: 320px
+	position: relative
+	line-height: 1.37
+	overflow-x: hidden
+	color: $textcolor
+
+.container
+	width: 100%
+	max-width: 1112px
+	margin: 0 auto
+	@media(max-width: 1050px)
+		padding: 0 25px
+
+
+ul
+	padding: 0
+	margin: 0
+	list-style: none
+li
+	padding: 0
+	margin: 0
+
+
+
+
+/*! * End config */
