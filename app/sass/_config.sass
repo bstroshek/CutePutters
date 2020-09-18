@@ -112,6 +112,17 @@ a
 		border: none
 		outline: none
 
+.btn-outline
+	@extend .btn
+	background: #ffffff
+	border: 2px solid #000000
+	color: #000000
+	&:hover, &:focus, &:active
+		border: 2px solid #000000
+		background: #ffffff
+		color: #000000
+		box-shadow: -2px -2px 39px #ccc
+
 
 
 .socials
@@ -123,7 +134,13 @@ a
 
 
 
-
+.slick-dots li button:before
+	font-size: 16px
+	color: #ffffff
+	opacity: 1
+.slick-dots li.slick-active button:before
+	opacity: 1
+	color: #d60514
 
 
 
