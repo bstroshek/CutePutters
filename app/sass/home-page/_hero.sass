@@ -74,16 +74,85 @@
 .made-usa
   position: absolute
   right: 40px
-  bottom: 0
+  bottom: 20px
 
 
 
 .hero-slider__main
   background: 100% -97px/765px no-repeat
   position: relative
-  padding-bottom: 114px
+  padding-bottom: 119px
   @media (min-width: 1440px)
     background: 100% -134px/882px 665px no-repeat
+
+.hero-tabgroup
+  position: relative
+  height: 605px
+  .tab-content
+    position: absolute
+    width: 100%
+    height: 100%
+    z-index: 10
+  .hide
+    visibility: hidden
+    z-index: -2
+
+.hero-tabs
+  width: 100%
+  max-width: 1440px
+  display: flex
+  align-items: center
+  li
+    width: 100%
+  li a
+    width: 100%
+    cursor: pointer
+    display: flex
+    align-items: center
+    justify-content: center
+    border-top: 1px solid #737373
+    border-bottom: 14px solid transparent
+    padding: 22px 0 11px
+    transition: all .3s
+    &:hover
+      border-bottom-color: #d60514
+    &.active
+      border-bottom-color: #d60514
+      border-top-color: transparent
+  .tab-center
+    border-left: 1px solid #737373
+    border-right: 1px solid #737373
+
+
+
+
+.hero-bottom
+  width: 100%
+  background-color: #000000
+  &__line
+    width: 70%
+    margin: 0 auto
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 14px 0
+    color: #ffffff
+    li
+      width: 100%
+      color: #ffffff
+      font-family: Roboto, serif
+      font-size: 12px
+      font-weight: 700
+      letter-spacing: 2.05px
+      text-transform: uppercase
+      text-align: center
+  .shipping
+    border-left: 1px solid #ffffff
+    border-right: 1px solid #ffffff
+    padding: 0 35px
+
+
+
 
 
 
