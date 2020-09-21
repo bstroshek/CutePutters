@@ -14,8 +14,14 @@
     text-transform: uppercase
     margin-bottom: 100px
     text-align: center
+    @media (max-width: 576px)
+      margin-bottom: 60px
   &__content
     width: 514px
+    @media (max-width: 1200px)
+      padding: 0 20px
+    @media (max-width: 768px)
+      width: 100%
     .text
       color: #ffffff
       font-family: "Cera GR Bold", serif
@@ -30,8 +36,17 @@
       font-weight: 400
       letter-spacing: 4.18px
       text-transform: uppercase
+      @media (max-width: 768px)
+        text-align: center
   .slick-dots
     bottom: -115px
+    @media (max-width: 576px)
+      bottom: -30px
+  .hero-slider-left
+    left: 0
+  .hero-slider-right
+    right: 0
+
 
 
 .pro-photo
@@ -41,6 +56,8 @@
   z-index: 0
   height: auto
   display: block
+  @media (max-width: 768px)
+    display: none
 
 
 
