@@ -3,6 +3,7 @@
 .hero
   width: 100%
   background: center/cover no-repeat
+  overflow-x: hidden
 
 
 .hero-slider__wrapper
@@ -10,6 +11,10 @@
   margin: 0 auto
   width: 100%
   position: relative
+  @media(max-width: 1200px)
+    padding-left: 40px
+  @media(max-width: 768px)
+    padding-left: 0
 
 
 .hero-slider__content
@@ -23,14 +28,24 @@
   letter-spacing: 0.69px
   line-height: 75px
   text-align: center
-  font-family: 'Lucida Grande', serif
+  font-family: 'RODUSsquare300', serif
   margin-bottom: 82px
+  @media(max-width: 992px)
+    margin-bottom: 40px
+  @media(max-width: 576px)
+    font-size: 45px
+    line-height: 65px
   span
     font-family: 'RODUSsquare700', serif
 
 .hero-slider__text
   width: 50%
   color: #ffffff
+  @media(max-width: 992px)
+    width: 70%
+  @media(max-width: 768px)
+    width: 100%
+    text-align: center
   .pre-title
     font-family: 'RODUSsquare700', serif
     font-size: 16px
@@ -51,8 +66,15 @@
     line-height: 22px
     width: 55%
     margin-bottom: 30px
+    @media(max-width: 768px)
+      margin-right: auto
+      margin-left: auto
+    @media(max-width: 576px)
+      width: 90%
   .btn
     width: 164px
+    @media(max-width: 768px)
+      margin: 0 auto
 
 .hero-slider-left
   cursor: pointer
@@ -84,10 +106,20 @@
   padding-bottom: 119px
   @media (min-width: 1440px)
     background: 100% -134px/882px 665px no-repeat
+  @media (max-width: 992px)
+    background: 100% -1px/610px no-repeat
+  @media(max-width: 768px)
+    background-size: 0
 
 .hero-tabgroup
   position: relative
   height: 605px
+  @media (max-width: 1200px)
+    height: 700px
+  @media (max-width: 992px)
+    height: 650px
+  @media (max-width: 576px)
+    height: 700px
   .tab-content
     position: absolute
     width: 100%
@@ -99,9 +131,10 @@
 
 .hero-tabs
   width: 100%
-  max-width: 1440px
   display: flex
   align-items: center
+  @media (max-width: 768px)
+    flex-direction: column
   li
     width: 100%
   li a
@@ -120,7 +153,9 @@
     &.active
       border-bottom-color: #d60514
       border-top-color: transparent
-  .tab-center
+      @media (max-width: 768px)
+        border-top-color: #737373
+  .tab-center a
     border-left: 1px solid #737373
     border-right: 1px solid #737373
 
@@ -137,6 +172,8 @@
     justify-content: space-between
     padding: 14px 0
     color: #ffffff
+    @media (max-width: 992px)
+      width: 100%
     li
       width: 100%
       color: #ffffff

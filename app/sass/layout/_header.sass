@@ -10,6 +10,9 @@
     display: flex
     align-items: center
     justify-content: flex-start
+    @media (max-width: 1200px)
+      padding-left: 20px
+      padding-right: 20px
   .logo
     margin-right: 52px
 .main-nav
@@ -20,6 +23,22 @@
   &__list
     display: flex
     align-items: center
+    @media (max-width: 992px)
+      height: 100%
+      overflow-y: scroll
+      overflow-x: hidden
+      background-color: #ffffff
+      position: absolute
+      top: 0
+      z-index: 100
+      width: 100%
+      box-sizing: border-box
+      max-width: 375px
+      padding: 28px 30px 0
+      left: -375px
+      transition: transform .6s
+      flex-direction: column
+      align-items: flex-start
   &__item
     margin-right: 25px
     a
@@ -28,6 +47,11 @@
       font-size: 16px
       font-weight: 500
       letter-spacing: 0.5px
+      @media (max-width: 992px)
+        color: #000000
+        padding: 10px 0
+        display: inline-block
+
     img
       margin-left: 4px
 
@@ -59,7 +83,58 @@
         background-color: rgba(25, 96, 133, 0.76)
 
 
+.hamburger
+  height: 30px
+  width: 35px
+  display: none
+  justify-content: space-around
+  flex-direction: column
+  span
+    height: 2px
+    background: #333333
+    width: 100%
+    transition: all .3s
+  &.active
+    span:first-child
+      transform: translateY(10px) rotate(45deg)
+    span:nth-child(2)
+      opacity: 0
+    span:last-child
+      transform: translateY(-10px) rotate(-45deg)
+  @media(max-width: 992px)
+    display: flex
+    margin-right: 30px
+    margin-bottom: 9px
 
+
+.main-nav__list.active
+  transform: translateX(100%)
+.main-hamburger span
+  background: #ffffff
+
+
+.mobile-nav-top
+  display: none
+  align-items: center
+  width: 100%
+  justify-content: space-between
+  margin-bottom: 30px
+  @media (max-width: 992px)
+    display: flex
+
+
+
+.explore-more-item
+  @media (max-width: 576px)
+    display: none
+
+
+body.fixed
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  width: 100%
 
 
 

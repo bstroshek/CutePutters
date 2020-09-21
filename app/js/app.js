@@ -1,6 +1,31 @@
 (function($) {
     $(document).ready(function(){
 
+
+
+        // Open Main nav on hamburger click
+        $('.hamburger').on('click', function (e) {
+            e.preventDefault();
+            $('.hamburger').toggleClass('active');
+            $('#js-nav').toggleClass('active');
+            $('body').toggleClass('fixed');
+
+        });
+
+        // Back Main nav on window resize
+        $(window).bind("resize", function () {
+            if ($(this).width() >= 992) {
+                $('#js-nav').removeClass('active');
+                $('.hamburger').removeClass('active');
+                $('body').removeClass('fixed')
+            }
+        }).trigger('resize');
+
+
+
+
+
+
         // HOME PAGE hero tabs
         $('.tabgroup > div').addClass('hide');
         $('.tabgroup > div:nth-of-type(2)').removeClass('hide');
@@ -81,6 +106,10 @@
             prevArrow:'<span class="hero-slider-left"><img src="images/dest/hero-slider-left.png" alt="icon" width="50" height="100"></span>',
             nextArrow:'<span class="hero-slider-right"><img src="images/dest/hero-slider-right.png" alt="icon" width="50" height="100"></span>'
         });
+
+
+
+
 
 
 
