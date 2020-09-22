@@ -41,19 +41,22 @@
       align-items: flex-start
   &__item
     margin-right: 25px
+    position: relative
     a
       color: #ffffff
       font-family: 'CeraGRMedium', serif
       font-size: 16px
       font-weight: 500
       letter-spacing: 0.5px
+      padding: 10px 0
       @media (max-width: 992px)
         color: #000000
         padding: 10px 0
         display: inline-block
-
     img
       margin-left: 4px
+    &:hover > .nav-dropdown
+      display: block
 
 .right-nav
   &__list
@@ -135,6 +138,32 @@ body.fixed
   left: 0
   right: 0
   width: 100%
+
+
+
+.nav-dropdown
+  position: absolute
+  top: 25px
+  left: 0
+  display: none
+  width: max-content
+  padding: 20px
+  background: #ffffff
+  z-index: 20
+  &__item a
+    padding: 0 5px
+    color: #000000
+
+
+
+
+
+
+
+
+
+
+
 
 
 
