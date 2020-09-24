@@ -177,6 +177,32 @@
 
 
 
+        // PRODUCT PAGE Reviews section - show more reviews
+
+        $('.read-reviews__item:lt(3)').show();
+        $('.rev-less').hide();
+        var items =  4;
+        var shown =  3;
+        $('.rev-more').click(function (e) {
+            e.preventDefault();
+            $('.rev-less').show();
+            shown = $('.read-reviews__item:visible').length+4;
+            if(shown< items) {
+                $('.read-reviews__item:lt('+shown+')').show(300);
+            } else {
+                $('.read-reviews__item:lt('+items+')').show(300);
+                $('.rev-more').hide();
+            }
+        });
+        $('.rev-less').click(function (e) {
+            e.preventDefault();
+            $('.read-reviews__item').not(':lt(3)').hide(300);
+            $('.rev-more').show();
+            $('.rev-less').hide();
+        });
+
+
+
 
     });
 
