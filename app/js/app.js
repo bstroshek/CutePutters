@@ -153,6 +153,28 @@
         });
 
 
+        // PRODUCT PAGE Reviews section - show more images
+
+        $('.images-box li:lt(6)').show();
+        $('.less').hide();
+        var items =  27;
+        var shown =  6;
+        $('.more').click(function () {
+            $('.less').show();
+            shown = $('.images-box li:visible').length+21;
+            if(shown< items) {
+                $('.images-box li:lt('+shown+')').show(300);
+            } else {
+                $('.images-box li:lt('+items+')').show(300);
+                $('.more').hide();
+            }
+        });
+        $('.less').click(function () {
+            $('.images-box li').not(':lt(6)').hide(300);
+            $('.more').show();
+            $('.less').hide();
+        });
+
 
 
 
