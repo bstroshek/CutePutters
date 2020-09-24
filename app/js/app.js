@@ -129,6 +129,31 @@
 
 
 
+        // PRODUCT PAGE Product slider
+
+        $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            vertical:true,
+            verticalSwiping:true,
+            // fade: true,
+            asNavFor: '.slider-nav'
+        });
+        $('.slider-nav').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            vertical:true,
+            arrows: false,
+            asNavFor: '.slider-for',
+            dots: false,
+            focusOnSelect: true,
+            adaptiveHeight: true,
+            verticalSwiping:true
+        });
+
+
+
 
 
     });
