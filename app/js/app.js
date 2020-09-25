@@ -109,24 +109,20 @@
 
 
 
-        // COLLECTION PAGE hero tabs
+        // COLLECTION PAGE hero scroll to section
 
-
-        $('.collection-tabgroup > div').hide();
-        $('.collection-tabgroup > div:first-of-type').show();
-        $('.tabs a').click(function(e){
+        $(".js-scroll").on("click", function(e) {
             e.preventDefault();
-            var $this = $(this),
-                tabgroup = '#'+$this.parents('.tabs').data('tabgroup'),
-                others = $this.closest('li').siblings().children('a'),
-                target = $this.attr('href');
-            others.removeClass('active');
-            $this.addClass('active');
-            $(tabgroup).children('div').hide();
-            $(target).show();
-
+            $("html, body").animate({
+                scrollTop: ($($(this).attr("href")).offset().top + 80)
+            }, 1000);
         });
 
+        if ($(window.location.hash).length > 1) {
+            $("html, body").animate({
+                scrollTop: $(window.location.hash).offset().top
+            }, 1000);
+        }
 
 
         // PRODUCT PAGE Product slider
