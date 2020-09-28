@@ -45,6 +45,25 @@ $cera: 'CeraGR', sans-serif
 .d-none
 	display: none
 
+
+.sm-visible
+	display: none
+	@media (max-width: 768px)
+		display: block
+.md-visible
+	display: none
+	@media (max-width: 992px)
+		display: block
+
+.md-hidden
+	@media (max-width: 992px)
+		display: none
+
+
+
+
+
+
 ::placeholder
 	color: #666
 
@@ -110,6 +129,11 @@ a
 	border: none
 	outline: none
 	cursor: pointer
+	@media (max-width: 576px)
+		font-size: 12px
+		letter-spacing: 0.38px
+		line-height: 15px
+		padding: 10px 0
 	&:hover, &:focus, &:active
 		background-color: rgb(231, 5, 20)
 		color: #ffffff

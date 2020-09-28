@@ -15,6 +15,7 @@
     padding-left: 40px
   @media(max-width: 768px)
     padding-left: 0
+    padding-top: 19px
 
 
 .hero-slider__content
@@ -32,11 +33,19 @@
   margin-bottom: 82px
   @media(max-width: 992px)
     margin-bottom: 40px
+  @media(max-width: 768px)
+    margin-bottom: 350px
   @media(max-width: 576px)
-    font-size: 45px
-    line-height: 65px
+    font-size: 24px
+    line-height: 30px
+    letter-spacing: 0.27px
+    margin-bottom: 230px
+  @media(max-width: 380px)
+    margin-bottom: 190px
   span
     font-family: 'RODUSsquare700', serif
+    @media(max-width: 768px)
+      display: block
 
 .hero-slider__text
   width: 50%
@@ -44,8 +53,10 @@
   @media(max-width: 992px)
     width: 70%
   @media(max-width: 768px)
+    padding-left: 40px
     width: 100%
-    text-align: center
+  @media(max-width: 380px)
+    padding-left: 15px
   .pre-title
     font-family: 'RODUSsquare700', serif
     font-size: 16px
@@ -53,12 +64,22 @@
     letter-spacing: 4.18px
     line-height: 16px
     margin-bottom: 18px
+    @media(max-width: 576px)
+      font-size: 10px
+      letter-spacing: 2.61px
+      line-height: 10px
   .title
     font-family: 'Cera GR Bold', serif
     font-size: 36px
     letter-spacing: 0.4px
     line-height: 45px
     margin-bottom: 18px
+    @media(max-width: 576px)
+      font-size: 20px
+      letter-spacing: 0.22px
+      line-height: 24px
+    @media(max-width: 380px)
+      width: 60%
   .text
     font-family: 'CeraGR', serif
     font-size: 16px
@@ -66,16 +87,17 @@
     line-height: 22px
     width: 55%
     margin-bottom: 30px
-    @media(max-width: 768px)
-      margin-right: auto
-      margin-left: auto
     @media(max-width: 576px)
-      width: 90%
+      font-size: 10px
+      letter-spacing: 0.31px
+      line-height: 18px
+      margin-bottom: 17px
+    @media(max-width: 380px)
+      width: 82%
   .btn
     width: 164px
-    @media(max-width: 768px)
-      margin: 0 auto
-
+    @media(max-width: 576px)
+      width: 140px
 .hero-slider-left
   cursor: pointer
   position: absolute
@@ -83,6 +105,14 @@
   bottom: 37%
   &:hover
     opacity: .8
+  @media(max-width: 768px)
+    bottom: 43%
+  @media(max-width: 576px)
+    left: 0
+    img
+      height: 60px
+      width: 30px
+
 
 .hero-slider-right
   cursor: pointer
@@ -91,12 +121,22 @@
   bottom: 37%
   &:hover
     opacity: .8
+  @media(max-width: 768px)
+    bottom: 43%
+  @media(max-width: 576px)
+    right: 0
+    img
+      height: 60px
+      width: 30px
+
 
 
 .made-usa
   position: absolute
   right: 40px
   bottom: 20px
+  @media(max-width: 768px)
+    display: none
 
 
 
@@ -109,7 +149,12 @@
   @media (max-width: 992px)
     background: 100% -1px/610px no-repeat
   @media(max-width: 768px)
-    background-size: 0
+    padding-bottom: 0
+  @media(max-width: 576px)
+    background: 100% -10px/410px no-repeat
+  @media(max-width: 380px)
+    background: 100% -10px/320px no-repeat
+
 
 .hero-tabgroup
   position: relative
@@ -118,8 +163,10 @@
     height: 700px
   @media (max-width: 992px)
     height: 650px
-  @media (max-width: 576px)
-    height: 700px
+  @media (max-width: 768px)
+    height: 830px
+  @media(max-width: 576px)
+    height: 510px
   .tab-content
     position: absolute
     width: 100%
@@ -134,7 +181,7 @@
   display: flex
   align-items: center
   @media (max-width: 768px)
-    flex-direction: column
+    display: none
   li
     width: 100%
   li a
@@ -153,8 +200,6 @@
     &.active
       border-bottom-color: #d60514
       border-top-color: transparent
-      @media (max-width: 768px)
-        border-top-color: #737373
   .tab-center a
     border-left: 1px solid #737373
     border-right: 1px solid #737373
@@ -164,6 +209,9 @@
 .hero-bottom
   width: 100%
   background-color: #000000
+  .container
+    @media (max-width: 576px)
+      padding: 0
   &__line
     width: 70%
     margin: 0 auto
@@ -183,10 +231,18 @@
       letter-spacing: 2.05px
       text-transform: uppercase
       text-align: center
+      @media (max-width: 576px)
+        font-size: 7px
+        letter-spacing: 0.5px
+        line-height: 9px
+        width: 70%
   .shipping
     border-left: 1px solid #ffffff
     border-right: 1px solid #ffffff
     padding: 0 35px
+    @media (max-width: 576px)
+      padding: 0
+      width: 100%
 
 
 

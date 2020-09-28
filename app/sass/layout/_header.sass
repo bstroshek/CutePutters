@@ -15,11 +15,17 @@
       padding-right: 20px
   .logo
     margin-right: 52px
+    img
+      @media (max-width: 576px)
+        height: 29px
+        width: 40px
 .main-nav
   display: flex
   align-items: center
   justify-content: space-between
   width: 100%
+  @media (max-width: 992px)
+    justify-content: flex-end
   &__list
     display: flex
     align-items: center
@@ -27,7 +33,7 @@
       height: 100%
       overflow-y: scroll
       overflow-x: hidden
-      background-color: #ffffff
+      background-color: #06303e
       position: absolute
       top: 0
       z-index: 100
@@ -39,6 +45,9 @@
       transition: transform .6s
       flex-direction: column
       align-items: flex-start
+    @media (max-width: 380px)
+      left: auto
+      right: 100%
   &__item
     margin-right: 25px
     position: relative
@@ -50,7 +59,6 @@
       letter-spacing: 0.5px
       padding: 10px 0
       @media (max-width: 992px)
-        color: #000000
         padding: 10px 0
         display: inline-block
     img
@@ -64,6 +72,8 @@
     align-items: center
   &__item
     margin-right: 25px
+    @media (max-width: 576px)
+      margin-right: 15px
     a
       color: #ffffff
       font-family: 'CeraGRMedium', serif
@@ -80,6 +90,9 @@
       display: flex
       align-items: center
       justify-content: center
+      @media (max-width: 576px)
+        height: 36px
+        width: 36px
       img
         margin-left: 0
       &:hover
@@ -87,9 +100,12 @@
 
 
 .hamburger
-  height: 30px
-  width: 35px
+  height: 36px
+  width: 36px
+  padding: 10px
   display: none
+  background-color: rgba(17, 85, 107, 0.75)
+  border-radius: 50%
   justify-content: space-around
   flex-direction: column
   span
@@ -99,15 +115,13 @@
     transition: all .3s
   &.active
     span:first-child
-      transform: translateY(10px) rotate(45deg)
+      transform: translateY(5px) rotate(45deg)
     span:nth-child(2)
       opacity: 0
     span:last-child
-      transform: translateY(-10px) rotate(-45deg)
+      transform: translateY(-5px) rotate(-45deg)
   @media(max-width: 992px)
     display: flex
-    margin-right: 30px
-    margin-bottom: 9px
 
 
 .main-nav__list.active
@@ -118,18 +132,24 @@
 
 .mobile-nav-top
   display: none
-  align-items: center
   width: 100%
-  justify-content: space-between
-  margin-bottom: 30px
   @media (max-width: 992px)
+    display: block
+  &-list
     display: flex
+    align-items: center
+    width: 100%
+    justify-content: space-between
+    margin-bottom: 30px
+    .right-nav__item
+      margin-right: 0
+  .hamburger
+    span
+      background: #ffffff
 
 
 
-.explore-more-item
-  @media (max-width: 576px)
-    display: none
+
 
 
 body.fixed
