@@ -4,6 +4,8 @@
   width: 100%
   background: 0 0/100% 100% no-repeat
   padding: 65px 0 110px
+  @media (max-width: 576px)
+    padding: 40px 0
   &__title
     text-align: center
     color: #000000
@@ -15,6 +17,11 @@
       letter-spacing: 4.18px
       text-transform: uppercase
       margin-bottom: 5px
+      @media (max-width: 576px)
+        font-size: 10px
+        letter-spacing: 2.61px
+        line-height: 10px
+        margin-bottom: 10px
     .title
       color: #000000
       font-family: "Cera GR Bold", serif
@@ -25,9 +32,14 @@
       margin: 0 auto 17px
       @media (max-width: 576px)
         width: 100%
+        font-size: 20px
+        letter-spacing: 0.22px
+        line-height: 25px
     .btn-outline
       width: 164px
       margin: 0 auto
+      @media (max-width: 576px)
+        width: 140px
 
 .cure-tabs
   width: 561px
@@ -94,15 +106,15 @@
     font-weight: 700
     letter-spacing: -3.45px
     @media (max-width: 576px)
-      font-size: 24px
+      font-size: 48px
       letter-spacing: -2.3px
-      line-height: 28px
+      line-height: 38px
     span
       font-size: 33px
       letter-spacing: -1.58px
       @media (max-width: 576px)
-        letter-spacing: -1.1px
-        font-size: 12px
+        letter-spacing: -1.15px
+        font-size: 24px
   .data-title
     color: #000000
     font-family: Roboto, serif
@@ -130,6 +142,7 @@
       font-size: 16px
       letter-spacing: 0.18px
       line-height: 20px
+      margin-bottom: 3px
   .description
     color: #000000
     font-family: 'CeraGR', serif
@@ -213,6 +226,7 @@
 
 .cure-mobile
   display: none
+  position: relative
   @media (max-width: 992px)
     display: block
 
@@ -220,6 +234,9 @@
 
 
 .cure-tabs
+  .container
+    @media (max-width: 576px)
+      padding: 0 10px
   .cure-item
     &__top
       width: 100%
@@ -238,15 +255,51 @@
       margin: -90px auto 0
       @media (max-width: 768px)
         width: 90%
+      @media (max-width: 380px)
+        width: 280px
+        margin-top: -60px
+        padding: 24px 20px
       &:before
         content: ''
         display: block
         position: absolute
         top: 0
-        left: calc(50% - 50px)
+        left: calc(50% - 40px)
         height: 4px
-        width: 100px
+        width: 80px
         background: #D60514
+
+
+.cure-slider
+  &-left
+    position: absolute
+    left: 25px
+    top: 35%
+    opacity: .25
+    @media (max-width: 576px)
+      left: 10px
+    img
+      @media (max-width: 576px)
+        width: 40px
+        height: 80px
+      @media (max-width: 380px)
+        width: 20px
+        height: 40px
+  &-right
+    position: absolute
+    right: 25px
+    top: 35%
+    opacity: .25
+    @media (max-width: 576px)
+      right: 10px
+    img
+      @media (max-width: 576px)
+        width: 40px
+        height: 80px
+      @media (max-width: 380px)
+        width: 20px
+        height: 40px
+
 
 
 

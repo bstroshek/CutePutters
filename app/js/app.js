@@ -96,6 +96,16 @@
 
         });
 
+        // HOME PAGE Cure section mobile slider
+        $('.cure-slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: false,
+            appendArrows: $('.cure-slider-arrows'),
+            prevArrow:'<span class="cure-slider-left"><img src="images/dest/hero-slider-left.png" alt="icon" width="50" height="100"></span>',
+            nextArrow:'<span class="cure-slider-right"><img src="images/dest/hero-slider-right.png" alt="icon" width="50" height="100"></span>'
+        });
+
 
         // HOME PAGE Favorite section slider
         $('.favorite__slider').slick({
