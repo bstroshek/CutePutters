@@ -125,6 +125,34 @@
             ]
         });
 
+        // HOME PAGE Series section mobile slider
+        $('.series__slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: false,
+            appendArrows: $('.series__slider-arrows'),
+            prevArrow:'<span class="hero-slider-left"><img src="images/dest/hero-slider-left.png" alt="icon" width="50" height="100"></span>',
+            nextArrow:'<span class="hero-slider-right"><img src="images/dest/hero-slider-right.png" alt="icon" width="50" height="100"></span>'
+        });
+
+        $('.classic-series__slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: false,
+            appendArrows: $('.classic-series__slider-arrows'),
+            prevArrow:'<span class="hero-slider-left"><img src="images/dest/hero-slider-left.png" alt="icon" width="50" height="100"></span>',
+            nextArrow:'<span class="hero-slider-right"><img src="images/dest/hero-slider-right.png" alt="icon" width="50" height="100"></span>'
+        });
+
+        $('.rx-series__slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: false,
+            appendArrows: $('.rx-series__slider-arrows'),
+            prevArrow:'<span class="hero-slider-left"><img src="images/dest/hero-slider-left.png" alt="icon" width="50" height="100"></span>',
+            nextArrow:'<span class="hero-slider-right"><img src="images/dest/hero-slider-right.png" alt="icon" width="50" height="100"></span>'
+        });
+
 
 
         // COLLECTION PAGE hero scroll to section

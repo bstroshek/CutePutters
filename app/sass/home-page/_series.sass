@@ -3,26 +3,43 @@
 .series
   width: 100%
   padding-top: 60px
+  position: relative
+  @media (max-width: 768px)
+    padding-bottom: 40px
+  @media (max-width: 576px)
+    padding-top: 40px
   &__title
     width: 100%
     text-align: center
     margin-bottom: 45px
     color: #000000
+    @media (max-width: 576px)
+      margin-bottom: 35px
     .pre-title
       font-family: "RODUSsquare700", serif
       font-size: 16px
       letter-spacing: 4.18px
       text-transform: uppercase
       margin-bottom: 10px
+      @media (max-width: 576px)
+        font-size: 10px
+        letter-spacing: 2.61px
+        line-height: 10px
     .title
       font-family: "Cera GR Bold", serif
       font-size: 35px
       font-weight: 700
       letter-spacing: 0.39px
       margin-bottom: 18px
+      @media (max-width: 576px)
+        font-size: 20px
+        letter-spacing: 0.22px
+        line-height: 25px
     .btn
       width: 164px
       margin: 0 auto
+      @media (max-width: 576px)
+        width: 140px
   &__box
     width: 100%
     display: flex
@@ -31,14 +48,23 @@
     width: 30%
     position: relative
     color: #001e28
+    @media (max-width: 768px)
+      background-color: #F6F6F5
+      padding-top: 15px
+      width: 100%
     .item-top
       display: flex
       flex-direction: column
       align-items: center
       text-align: center
       margin-bottom: 30px
+      @media (max-width: 768px)
+        margin-bottom: 0px
     .item-icon
       margin-bottom: 7px
+      @media (max-width: 576px)
+        transform: scale(0.7)
+        margin-bottom: 0
     .item-title
       font-family: "Cera GR Bold", serif
       font-size: 18px
@@ -46,18 +72,40 @@
       letter-spacing: 1px
       line-height: 28px
       margin: 0
+      @media (max-width: 576px)
+        font-size: 14px
+        letter-spacing: 0.78px
+        line-height: 20px
+        font-family: "CeraGR", serif
+        font-weight: 400
     .item-price
       font-family: "Cera GR Bold", serif
       font-size: 18px
       font-weight: 700
       letter-spacing: 1px
       line-height: 28px
+      @media (max-width: 576px)
+        font-size: 14px
+        letter-spacing: 0.78px
+        line-height: 20px
+        margin-bottom: 10px
+    .item-rate
+      @media (max-width: 576px)
+        height: 15px
+        width: 90px
     .item-image
       display: block
       width: 100%
       max-width: 100%
       height: auto
       margin: 0 auto
+      @media (max-width: 768px)
+        width: 400px
+        height: 400px
+        object-fit: contain
+      @media (max-width: 576px)
+        width: 300px
+        height: 300px
     .btn
       position: absolute
       width: 164px
@@ -65,6 +113,11 @@
       margin: 0 auto
       left: 50%
       transform: translateX(-50%)
+      @media (max-width: 768px)
+        position: static
+        left: auto
+        transform: none
+        margin-top: 20px
     .item-info
       width: 100%
     .info-row
@@ -96,6 +149,8 @@
 
 .tour-series
   background: #ffffff 0 100%/1382px no-repeat
+  @media (max-width: 768px)
+    background: #ffffff 0 0/0
   .series__box
     align-items: flex-end
   .item-tour3
@@ -104,13 +159,22 @@
 
 .classic-series
   background: center/cover no-repeat
+  @media (max-width: 768px)
+    background-image: none!important
+    background: linear-gradient(to top, #044458 0%, #04202b 100%) !important
   .series__title
     color: #ffffff
   .series__item
     color: #ffffff
+    @media (max-width: 768px)
+      background-color: rgba(255, 255, 255, 0.05)
   .item-top
     margin-bottom: 10px
   .classic1-item
+    @media (max-width: 992px)
+      display: flex
+      flex-direction: column
+      justify-content: flex-end
     .item-image
       max-width: 306px
   .classic2-item
@@ -121,9 +185,13 @@
       max-width: 350px
       position: absolute
       bottom: 0
+      @media (max-width: 768px)
+        position: static
 
 .rx-series
   background: 0 0/100% no-repeat
+  @media (max-width: 768px)
+    background: #ffffff 0 0/0
   .rx3-item
     .item-image
       max-width: 350px
@@ -136,8 +204,87 @@
       bottom: 0
 
 
+.series__slider-arrows
+  .hero-slider-left
+    bottom: 32%
+    left: 25px
+    opacity: .25
+    @media (max-width: 576px)
+      bottom: 35%
+    @media (max-width: 380px)
+      bottom: 40%
+    img
+      @media (max-width: 380px)
+        height: 40px
+        width: 20px
+  .hero-slider-right
+    bottom: 32%
+    right: 25px
+    opacity: .25
+    @media (max-width: 576px)
+      bottom: 35%
+    @media (max-width: 380px)
+      bottom: 40%
+    img
+      @media (max-width: 380px)
+        height: 40px
+        width: 20px
 
 
+
+.classic-series__slider-arrows
+  .hero-slider-left
+    bottom: 35%
+    left: 25px
+    opacity: .5
+    @media (max-width: 576px)
+      bottom: 40%
+    @media (max-width: 380px)
+      bottom: 45%
+    img
+      @media (max-width: 380px)
+        height: 40px
+        width: 20px
+  .hero-slider-right
+    bottom: 35%
+    right: 25px
+    opacity: .5
+    @media (max-width: 576px)
+      bottom: 40%
+    @media (max-width: 380px)
+      bottom: 45%
+    img
+      @media (max-width: 380px)
+        height: 40px
+        width: 20px
+
+
+
+.rx-series__slider-arrows
+  .hero-slider-left
+    bottom: 35%
+    left: 25px
+    opacity: .25
+    @media (max-width: 576px)
+      bottom: 40%
+    @media (max-width: 380px)
+      bottom: 45%
+    img
+      @media (max-width: 380px)
+        height: 40px
+        width: 20px
+  .hero-slider-right
+    bottom: 35%
+    right: 25px
+    opacity: .25
+    @media (max-width: 576px)
+      bottom: 40%
+    @media (max-width: 380px)
+      bottom: 45%
+    img
+      @media (max-width: 380px)
+        height: 40px
+        width: 20px
 
 
 
