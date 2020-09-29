@@ -6,12 +6,25 @@
   &-bg
     background: center/cover no-repeat
     padding-top: 121px
+    @media (max-width: 768px)
+      background: #ffffff 0 52px/800px no-repeat
+    @media (max-width: 576px)
+      padding-top: 55px
+      background: #ffffff -100px 52px/700px no-repeat
+    @media (max-width: 480px)
+      background: #ffffff -100px 52px/600px no-repeat
+    @media (max-width: 380px)
+      background: #ffffff -90px 120px/450px no-repeat
   &__top
     width: 100%
     text-align: center
     margin-bottom: 484px
     @media (min-width: 1680px)
       margin-bottom: 706px
+    @media (max-width: 768px)
+      margin-bottom: 190px
+    @media (max-width: 576px)
+      margin-bottom: 110px
     .title
       color: #000000
       font-family: "Cera GR Bold", serif
@@ -19,6 +32,11 @@
       font-weight: 700
       letter-spacing: 0.4px
       margin-bottom: 10px
+      @media (max-width: 576px)
+        font-size: 20px
+        letter-spacing: 0.22px
+        line-height: 25px
+        margin-bottom: 20px
     .text
       text-align: center
       color: #000000
@@ -29,14 +47,27 @@
       line-height: 22px
       width: 351px
       margin: 0 auto 25px
+      @media (max-width: 576px)
+        font-size: 10px
+        letter-spacing: 0.31px
+        line-height: 16px
+        margin-bottom: 35px
+        width: 232px
   &__form
     width: 534px
     display: flex
     align-items: center
     justify-content: space-between
     margin: 0 auto
+    @media (max-width: 576px)
+      flex-direction: column
+      width: 340px
+    @media (max-width: 380px)
+      width: 240px
     .btn
       width: 164px
+      @media (max-width: 576px)
+        width: 100%
     .form-control
       border-radius: 22.5px
       background: #ffffff
@@ -51,20 +82,38 @@
       border: none
       box-shadow: none
       outline: none
+      @media (max-width: 576px)
+        font-size: 12px
+        letter-spacing: 0.38px
+        line-height: 15px
+        text-align: center
+        margin-bottom: 10px
+        width: 100%
+        margin-right: 0
       &:placeholder
         color: #000000
         font-family: "Cera GR Bold", serif
         font-size: 16px
         font-weight: 700
         letter-spacing: 0.5px
+        @media (max-width: 576px)
+          color: #A8A8A8
   &__box
     width: 100%
     display: flex
     justify-content: space-between
     align-items: flex-start
     padding-bottom: 60px
+    @media (max-width: 576px)
+      flex-wrap: wrap
+      padding-bottom: 0
   &__column
     width: 32%
+    @media (max-width: 992px)
+      width: 30%
+    @media (max-width: 576px)
+      width: 100%
+      margin-bottom: 50px
     .col-title
       border-bottom: 1px solid #ffffff
       margin-bottom: 10px
@@ -75,13 +124,25 @@
         font-size: 14px
         font-weight: 700
         width: 100%
+        @media (max-width: 576px)
+          font-size: 12px
+          letter-spacing: 0
+          line-height: 15px
     .col-item a
       color: #ffffff
       font-family: "CeraGR", serif
       font-size: 14px
       font-weight: 400
+      @media (max-width: 576px)
+        font-size: 10px
+        letter-spacing: 0
+        line-height: 13px
   .terms-col
     width: 14%
+    @media (max-width: 992px)
+      width: 30%
+    @media (max-width: 576px)
+      width: 100%
 
   &__bottom
     background-color: #171B1D
@@ -93,18 +154,29 @@
       display: flex
       align-items: center
       justify-content: space-between
+      @media (max-width: 576px)
+        justify-content: center
       .text
         color: #ffffff
         font-family: "CeraGR", serif
         font-size: 12px
         font-weight: 400
         margin: 0
+        @media (max-width: 576px)
+          font-size: 10px
+          letter-spacing: 0
+          line-height: 13px
     .socials
       padding-right: 34px
+      @media (max-width: 576px)
+        display: none
     .socials__item
       margin: 0 8px
 
 
+.footer-container-bg
+  @media (max-width: 768px)
+    background-color: #314315
 
 
 
