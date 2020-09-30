@@ -5,8 +5,8 @@
   .tab-content
     width: 100%
     padding-top: 60px
-
-
+    @media (max-width: 576px)
+      padding-top: 19px
 .collection-tab
   &__container
     width: 100%
@@ -20,6 +20,10 @@
     margin-bottom: 45px
     .pre-title
       margin: 0 auto
+      @media (max-width: 576px)
+        height: 20px
+        width: 125.26px
+        margin-bottom: 10px
     .title
       color: #ffffff
       font-family: "Cera GR Bold", serif
@@ -28,12 +32,23 @@
       letter-spacing: 0.57px
       line-height: 78px
       margin-bottom: 10px
+      @media (max-width: 768px)
+        font-size: 32px
+      @media (max-width: 576px)
+        font-size: 24px
+        letter-spacing: 0.27px
+        line-height: 30px
     .past-title
       color: #ffffff
       font-family: 'RODUSsquare700', serif
       font-size: 16px
       letter-spacing: 4.18px
       text-transform: uppercase
+      @media (max-width: 576px)
+        font-size: 10px
+        letter-spacing: 2.61px
+        line-height: 10px
+        padding-top: 5px
   &__box
     width: 100%
     display: flex
@@ -67,6 +82,9 @@
       letter-spacing: 4.18px
       text-transform: uppercase
       margin-right: 30px
+      @media (max-width: 992px)
+        font-size: 12px
+        margin-right: 0
     &:hover
       border: none!important
       background-image: linear-gradient(207deg, #171b1d 100%, #333a3e 0%)
@@ -75,6 +93,9 @@
       border: none!important
       span
         color: #000000
+    img
+      @media (max-width: 992px)
+        transform: scale(.7)
 
 
 
@@ -82,6 +103,8 @@
   position: absolute
   top: 0
   right: 30px
+  @media (max-width: 768px)
+    display: none
 
 
 
