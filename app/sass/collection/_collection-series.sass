@@ -5,12 +5,17 @@
     width: 100%
     background: #ffffff center/cover no-repeat
     padding: 0 0 105px
+    @media (max-width: 992px)
+      padding-bottom: 40px
   &__product
     width: 100%
     display: flex
     margin-bottom: 87px
     @media (max-width: 1200px)
       position: relative
+    @media (max-width: 992px)
+      flex-direction: column
+      margin-bottom: 0
     .img-box
       width: 600px
       height: 580px
@@ -19,10 +24,28 @@
         position: absolute
         top: 0
         left: 0
+      @media (max-width: 992px)
+        position: relative
+        top: auto
+        left: auto
+        margin: 0 auto
+        width: 100%
+        height: auto
+      @media (max-width: 768px)
+        width: 100%
       .product-img
         position: absolute
         top: 0
         left: 0
+        @media (max-width: 992px)
+          position: static
+          top: auto
+          left: auto
+          margin: 0 auto
+          display: block
+        @media (max-width: 768px)
+          width: 100%
+          height: auto
       .txt span
         font-family: "Cera GR Bold", serif
         font-size: 16px
@@ -41,11 +64,21 @@
       @media (max-width: 1200px)
         width: 100%
         padding-left: 600px
+      @media (max-width: 992px)
+        padding: 0
+        text-align: center
       .pre-title
         font-family: 'RODUSsquare700', serif
         font-size: 16px
         letter-spacing: 4.18px
         text-transform: uppercase
+        @media (max-width: 768px)
+          font-size: 10px
+          letter-spacing: 2.61px
+          line-height: 10px
+      .img-title
+        @media (max-width: 576px)
+          transform: scale(.9)
       .title
         font-family: "Cera GR Bold", serif
         font-size: 36px
@@ -53,6 +86,15 @@
         line-height: 40px
         margin-top: 15px
         margin-bottom: 30px
+        br
+          display: none
+          @media (max-width: 768px)
+            display: block
+        @media (max-width: 576px)
+          font-size: 20px
+          letter-spacing: 0.22px
+          line-height: 25px
+          margin: 15px auto 0
       .text
         font-family: "CeraGR", serif
         font-size: 16px
@@ -62,6 +104,10 @@
         margin-bottom: 25px
       .btn
         width: 164px
+        @media (max-width: 992px)
+          margin: 0 auto
+        @media (max-width: 576px)
+          width: 140px
       .price
         font-family: "Cera GR Bold", serif
         font-size: 24px
@@ -70,32 +116,65 @@
         line-height: 22px
         margin-bottom: 30px
         display: inline-block
+        @media (max-width: 576px)
+          font-size: 20px
+          letter-spacing: 0.63px
+          line-height: 22px
   &__info-box
     width: 100%
     display: flex
     align-items: center
     padding-left: 8%
+    @media (max-width: 992px)
+      flex-direction: column
+      padding: 0
+      width: 50%
+      margin: 0 auto 20px
+    @media (max-width: 768px)
+      width: 80%
+    @media (max-width: 576px)
+      width: 100%
+      margin-top: -50px
+    @media (max-width: 576px)
+      margin-top: -10px
     .box-item
       width: 30%
       padding-left: 15px
       border-left: 5px solid #D60514
       display: flex
       align-items: center
+      @media (max-width: 992px)
+        width: 100%
+        margin-bottom: 10px
+        border: none
+        padding: 0
+        justify-content: flex-start
+      @media (max-width: 576px)
+        margin-bottom: 0
       @at-root.scale
         display: flex
         width: 255px
         justify-content: space-between
         margin-left: 10px
+        @media (max-width: 576px)
+          width: 144px
         span
           height: 10px
           width: 46px
           background-color: #d8d8d8
+          @media (max-width: 576px)
+            height: 6px
+            width: 26px
           &:first-child
             border-radius: 100px 0 0 100px
           &:last-child
             border-radius: 0 100px 100px 0
           &.active
             background-color: #f9020d
+        img
+          @media (max-width: 576px)
+            height: 6px
+            width: 26px
       .descr
         font-family: "CeraGR", serif
         font-size: 18px
@@ -103,8 +182,31 @@
         letter-spacing: 0.56px
         line-height: 22px
         margin: 0
+        @media (max-width: 576px)
+          line-height: 16px
         span
           font-family: "Cera GR Bold", serif
+          @media (max-width: 576px)
+            font-family: 'Roboto', serif
+            font-size: 10px
+            letter-spacing: 0.63px
+            line-height: 16px
+      .descr-title
+        color: #333333
+        font-family: 'Roboto', serif
+        font-size: 18px
+        font-weight: bold
+        letter-spacing: 0.63px
+        line-height: 16px
+        text-align: right
+        width: 30%
+        margin-right: 15px
+        margin-bottom: 0
+        @media (max-width: 576px)
+          font-size: 10px
+      .scale
+        @media (max-width: 992px)
+          margin: 0
       .size
         border-radius: 7px
         background-color: #D60514
@@ -125,6 +227,9 @@
 
 .collection-rx3
   padding-top: 55px
+  @media (max-width: 768px)
+    padding-top: 40px
+    background: 0 0/0
 .collection-rx3 .text-box
   color: #000000
 .collection-rx3 .collection__info-box .descr
@@ -139,6 +244,9 @@
     img
       top: 102px
       right: 361px
+      @media (max-width: 768px)
+        width: 30px
+        height: auto
   .middle-txt
     span
       top: 249px
@@ -155,12 +263,23 @@
       left: -3px
 .collection-rx3 .collection__product .img-box
   width: 698px
+  @media (max-width: 992px)
+    width: 100%
 .collection-rx3 .collection__product .img-box .product-img
   left: -102px
+  @media (max-width: 992px)
+    left: 0
 
 
 .collection-rx4
   padding-top: 40px
+  @media (max-width: 576px)
+    background: linear-gradient(0deg, #044458 0%, #04202B 100%) !important
+  .collection__info-box .box-item .descr-title
+    color: #ffffff
+  .collection__product .text-box .img-title
+    transform: scale(.8)
+
 .collection-rx4 .text-box
   color: #ffffff
 .collection-rx4 .collection__product .img-box .product-img
@@ -200,6 +319,8 @@
   padding-top: 30px
   .collection__product .text-box
     width: 39%
+    @media (max-width: 1200px)
+      width: 100%
 .collection-rx5 .img-box
   .top-txt
     span
@@ -225,8 +346,15 @@
 
 
 
+.collection__info-box .item-scale
+  @media (max-width: 1200px)
+    width: 40%
+  @media (max-width: 992px)
+    width: 100%
 
 
+.container-img-box
+  padding: 0
 
 
 
