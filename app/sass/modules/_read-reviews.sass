@@ -5,6 +5,10 @@
   width: 100%
   padding-top: 89px
   padding-bottom: 178px
+  @media (max-width: 768px)
+    padding-top: 20px
+  @media (max-width: 576px)
+    padding-top: 0
   &__title
     width: 100%
     display: flex
@@ -12,14 +16,25 @@
     justify-content: space-between
     color: #000000
     margin-bottom: 52px
+    @media (max-width: 768px)
+      flex-direction: column
+      margin-bottom: 35px
     .title
       color: #000000
       font-family: 'Cera GR Bold', serif
       font-size: 35px
       letter-spacing: 0.39px
       line-height: 44px
+      @media (max-width: 768px)
+        margin-bottom: 20px
+      @media (max-width: 576px)
+        font-size: 20px
+        letter-spacing: 0.22px
+        line-height: 25px
     .btn
       width: 190px
+      @media (max-width: 576px)
+        width: 160px
   &__container
     margin: 0 auto
     width: 100%
@@ -27,6 +42,9 @@
   &__top
     width: 100%
     padding-bottom: 43px
+    @media (max-width: 992px)
+      padding-left: 20px
+      padding-right: 20px
     .rating-blk
       width: 100%
       margin-bottom: 30px
@@ -45,6 +63,11 @@
         width: 30%
         .scale
           margin: 0 0 10px
+          @media (max-width: 890px)
+            width: 100%
+          span
+            @media (max-width: 890px)
+              width: 19%
         .title
           color: #000000
           font-family: 'CeraGR', serif
@@ -52,6 +75,9 @@
           letter-spacing: 0.5px
           line-height: 22px
           margin-bottom: 0
+          @media (max-width: 576px)
+            font-size: 10px
+            letter-spacing: 0.31px
     .images-box
       width: auto
       display: flex
@@ -94,22 +120,32 @@
 .read-reviews
   &__main
     width: 100%
+    margin: 0 auto
+    max-width: 1400px
+    padding: 0 20px
   &__item
     display: none
     width: 100%
     padding: 32px 0
-    margin: 0 20px
     border-top: 1px solid #979797
   &__item-box
     width: 100%
     display: flex
     justify-content: space-between
+    @media (max-width: 768px)
+      flex-direction: column
     .item-left
       padding-top: 7px
       width: 150px
+      @media (max-width: 768px)
+        order: 1
+        width: 100%
+        margin-bottom: 25px
       .stars
         color: #D1D1D1
         margin-bottom: 23px
+        @media (max-width: 768px)
+          margin-bottom: 13px
         .active
           color: #D82D00
       .customer
@@ -126,6 +162,9 @@
         line-height: 20px
     .item-center
       width: 500px
+      @media (max-width: 768px)
+        order: 3
+        width: 100%
       .title
         color: #000000
         font-family: 'Cera GR Bold', serif
@@ -141,6 +180,9 @@
           margin-right: 22px
     .item-right
       width: 170px
+      @media (max-width: 768px)
+        order: 2
+        margin-bottom: 40px
       .title
         color: #000000
         font-family: 'CeraGRMedium', serif
