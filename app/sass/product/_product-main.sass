@@ -3,16 +3,24 @@
 .product
   &__container
     padding-top: 39px
+    @media (max-width: 992px)
+      padding-bottom: 39px
   &__box
     display: flex
     justify-content: space-between
     width: 100%
+    @media (max-width: 768px)
+      flex-wrap: wrap
   &__top
     width: 100%
     display: flex
     align-items: center
     justify-content: space-between
     margin-bottom: 74px
+    @media (max-width: 992px)
+      justify-content: flex-start
+    @media (max-width: 768px)
+      justify-content: center
     .series-pre-title
       color: #FFFFFF
       font-family: 'RODUSsquare700', serif
@@ -20,12 +28,29 @@
       font-weight: bold
       letter-spacing: 4.18px
       line-height: 16px
+      @media (max-width: 992px)
+        margin-right: 10px
+      @media (max-width: 576px)
+        font-size: 8px
+        letter-spacing: 2.09px
+        line-height: 9px
+        margin-right: 0
+    .series-title img
+      @media (max-width: 576px)
+        transform: scale(.6)
     .title
       color: #FFFFFF
       font-family: 'Cera GR Bold', serif
       font-size: 18px
       letter-spacing: 0
       line-height: 25px
+      @media (max-width: 992px)
+        font-size: 40px
+        letter-spacing: 0
+        line-height: 45px
+      @media (max-width: 576px)
+        font-size: 28px
+        line-height: 25px
     .title-rate
       display: flex
       align-items: center
@@ -44,16 +69,32 @@
 
   &__picture
     width: 40%
+    @media (max-width: 768px)
+      width: 100%
   &__description
     width: 50%
+    @media (max-width: 768px)
+      width: 100%
     .product__top
       margin-top: -9px
+      @media (max-width: 992px)
+        margin: 0 0 20px
     &-top
       width: 80%
       border-bottom: 1px solid rgba(151, 151, 151, 0.51)
       margin-bottom: 34px
       padding-bottom: 34px
       padding-top: 34px
+      @media (max-width: 768px)
+        text-align: center
+        margin-left: auto
+        margin-right: auto
+      @media (max-width: 576px)
+        margin-bottom: 20px
+        padding-bottom: 20px
+        padding-top: 30px
+      @media (max-width: 480px)
+        width: 100%
     .product__title
       color: #FFFFFF
       font-family: 'Cera GR Bold', serif
@@ -61,12 +102,22 @@
       letter-spacing: 0.39px
       line-height: 40px
       margin-bottom: 27px
+      @media (max-width: 992px)
+        font-size: 30px
+      @media (max-width: 576px)
+        font-size: 20px
+        letter-spacing: 0.22px
+        line-height: 25px
     .product__text
       color: #FFFFFF
       font-family: 'CeraGR', serif
       font-size: 16px
       letter-spacing: 0.5px
       line-height: 22px
+      @media (max-width: 576px)
+        font-size: 12px
+        letter-spacing: 0.38px
+        line-height: 20px
     .product__link
       color: #FFFFFF
       font-family: 'CeraGR', serif
@@ -74,8 +125,14 @@
       letter-spacing: 0.5px
       line-height: 25px
       text-decoration: underline
+      @media (max-width: 576px)
+        font-size: 10px
+        letter-spacing: 0.31px
+        line-height: 25px
     &-bottom
       text-align: left
+      @media (max-width: 576px)
+        text-align: center
     .available
       color: #FFFFFF
       font-family: 'Cera GR Bold', serif
@@ -84,6 +141,10 @@
       line-height: 18px
       text-transform: uppercase
       margin-bottom: 14px
+      @media (max-width: 576px)
+        font-size: 10px
+        letter-spacing: 2.61px
+        line-height: 13px
     .colors-title
       color: #FFFFFF
       font-family: 'CeraGR', serif
@@ -91,11 +152,20 @@
       letter-spacing: 0.5px
       line-height: 22px
       margin-bottom: 7px
+      @media (max-width: 576px)
+        font-size: 12px
+        letter-spacing: 0.38px
+        line-height: 22px
+        margin-bottom: 0
     .colors
       display: flex
       align-items: center
+      @media (max-width: 576px)
+        justify-content: center
       li
         margin-right: 14px
+        @media (max-width: 576px)
+          margin: 15px 7px 0
     .color-item
       height: 35px
       width: 35px
@@ -122,9 +192,16 @@
   width: 100%
   display: flex
   justify-content: space-between
+  @media (max-width: 768px)
+    flex-direction: column
+    position: relative
+    justify-content: center
 
 .product-slider-thumb
   width: 30%
+  @media (max-width: 768px)
+    width: 100%
+    order: 2
   .slick-slide
     &:focus
       border-color: transparent
@@ -142,6 +219,15 @@
     display: flex
     align-items: center
     justify-content: center
+    overflow: hidden
+    @media (max-width: 768px)
+      margin: 0 auto
+    @media (max-width: 576px)
+      height: 50px
+      width: 50px
+      img
+        width: 40%
+        height: auto
     &:hover
       opacity: 1
   .slick-slide.slick-current.slick-active
@@ -153,7 +239,26 @@
 
 .product-slider-main
   width: 60%
+  @media (max-width: 768px)
+    width: 100%
+    margin-bottom: 20px
+  .slider-banner-image img
+    @media (max-width: 768px)
+      margin: 0 auto
+    @media (max-width: 576px)
+      width: 160px
+      height: auto
 
+
+
+
+.product-slider__arrows
+  .hero-slider-left
+    left: -25px
+    bottom: 55%
+  .hero-slider-right
+    right: -25px
+    bottom: 55%
 
 
 

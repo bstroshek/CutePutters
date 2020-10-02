@@ -32,32 +32,53 @@
 
 <body>
 
+	<div class="hero-bottom md-visible">
+		<div class="container">
+			<ul class="hero-bottom__line">
+				<li>2 Year Warranty</li>
+				<li class="shipping">FREE SHIPPING OVER $249.99</li>
+				<li>MADE IN THE USA</li>
+			</ul>
+		</div>
+	</div>
+
 	<section class="hero" style="background-image: url('images/dest/product-hero-background.jpg')">
 
 		<header class="header">
 			<div class="header__container">
 				<a href="" class="logo"><img src="images/dest/Cure%20logo.png" alt="logo" width="84" height="62"></a>
 				<nav class="main-nav">
-					<a href="" class="hamburger main-hamburger">
-						<span></span>
-						<span></span>
-						<span></span>
-					</a>
 					<ul class="main-nav__list" id="js-nav">
 
 						<li class="mobile-nav-top">
-							<a href="" class="logo"><img src="images/dest/Cure%20logo.png" alt="logo" width="84" height="62"></a>
-							<a href="" class="hamburger">
-								<span></span>
-								<span></span>
-								<span></span>
-							</a>
+							<ul class="mobile-nav-top-list">
+								<li><a href="" class="logo"><img src="images/dest/Cure%20logo.png" alt="logo" width="84" height="62"></a></li>
+								<li>
+									<a href="" class="hamburger">
+										<span></span>
+										<span></span>
+										<span></span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="mobile-nav-top">
+							<ul class="mobile-nav-top-list">
+								<li class="right-nav__item explore-more-item"><a href="">Explore More <img src="images/dest/Menu%20icon.svg" alt="menu-icon"></a></li>
+								<li class="right-nav__item"><a class="circle-icon" href=""><img src="images/dest/user.svg" alt="icon"></a></li>
+							</ul>
+						</li>
+						<li class="mobile-nav-top">
+							<ul class="mobile-nav-top-list">
+								<li class="right-nav__item"><a href=""><img src="images/dest/Seach-Icon.svg" alt="icon"></a></li>
+							</ul>
 						</li>
 
 						<li class="main-nav__item">
 							<a href="">Shop Putters <img src="images/dest/arrow.svg" alt="icon"></a>
 							<ul class="nav-dropdown">
 								<li class="nav-dropdown__item"><a href="collection.html">Collection Page</a></li>
+								<li class="nav-dropdown__item"><a href="product.html">Product Page</a></li>
 							</ul>
 
 						</li>
@@ -65,10 +86,15 @@
 						<li class="main-nav__item"><a href="">Why Cure</a></li>
 					</ul>
 					<ul class="right-nav__list">
-						<li class="right-nav__item explore-more-item"><a href="">Explore More <img src="images/dest/Menu%20icon.svg" alt="menu-icon"></a></li>
-						<li class="right-nav__item"><a href=""><img src="images/dest/Seach-Icon.svg" alt="icon"></a></li>
+						<li class="right-nav__item explore-more-item md-hidden"><a href="">Explore More <img src="images/dest/Menu%20icon.svg" alt="menu-icon"></a></li>
+						<li class="right-nav__item md-hidden"><a href=""><img src="images/dest/Seach-Icon.svg" alt="icon"></a></li>
 						<li class="right-nav__item"><a class="circle-icon" href=""><img src="images/dest/shopping-cart.svg" alt="icon"></a></li>
-						<li class="right-nav__item"><a class="circle-icon" href=""><img src="images/dest/user.svg" alt="icon"></a></li>
+						<li class="right-nav__item md-hidden"><a class="circle-icon" href=""><img src="images/dest/user.svg" alt="icon"></a></li>
+						<li><a href="" class="hamburger main-hamburger">
+							<span></span>
+							<span></span>
+							<span></span>
+						</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -82,11 +108,13 @@
 
 				<div class="product__picture">
 
-					<ul class="product__top">
-						<li class="series-pre-title">RX SERIES</li>
-						<li class="series-title"><img src="images/dest/RX5-LOGO2.png" alt="" width="132" height="30"></li>
-						<li class="title">High MOI Putter</li>
-					</ul>
+					<div class="md-hidden">
+						<ul class="product__top">
+							<li class="series-pre-title">RX SERIES</li>
+							<li class="series-title"><img src="images/dest/RX5-LOGO2.png" alt="" width="132" height="30"></li>
+							<li class="title">High MOI Putter</li>
+						</ul>
+					</div>
 
 					<!--Product slider start-->
 					<section class="banner-section">
@@ -139,6 +167,8 @@
 									</div>
 								</div>
 
+								<div class="product-slider__arrows sm-visible"></div>
+
 							</div>
 						</div>
 					</section>
@@ -148,21 +178,32 @@
 
 				<div class="product__description">
 
-					<ul class="product__top">
+					<div class="md-hidden">
+						<ul class="product__top">
 
-						<li class="title-rate">
-							<div class="rate-stars">
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-							</div>
-							<span>(199)</span></li>
-						<li class="title-btn"><a href="" class="btn">Customize Now - $ 259.95</a></li>
-					</ul>
+							<li class="title-rate">
+								<div class="rate-stars">
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+								</div>
+								<span>(199)</span></li>
+							<li class="title-btn"><a href="" class="btn">Customize Now - $ 259.95</a></li>
+						</ul>
+					</div>
 
 					<div class="product__description-top">
+						<div class="md-visible">
+							<ul class="product__top">
+								<li class="series-pre-title">RX SERIES</li>
+								<li class="series-title"><img src="images/dest/RX5-LOGO2.png" alt="" width="132" height="30"></li>
+							</ul>
+							<ul class="product__top">
+								<li class="title">High MOI Putter</li>
+							</ul>
+						</div>
 						<h2 class="product__title">Consistent Launch Angle and Superior Forward Roll</h2>
 						<p class="product__text">Nothing rolls smoother! Like all RX Series Putters, the RX5 features a higher center of gravity, lower loft, and a deeper face that impacts the ball at the equator.</p>
 						<a href="" class="product__link">See what’s included</a>
@@ -250,7 +291,7 @@
 
 	<!--SECTION CURE-->
 
-	<div class="cure cure-product">
+	<div class="cure cure-product d-none">
 		<div class="cure__title">
 			<p class="pre-title">REVOLUTIONIZING PERFORMANCE</p>
 			<h2 class="title">Why Higher MOI’s = Better Putts</h2>
@@ -315,7 +356,7 @@
 
 	<!--PERFORMANCE-->
 
-	<div class="performance product-performance">
+	<div class="performance product-performance d-none">
 		<div class="performance__top" style="background-image: url('images/dest/Revolutionizing-Performance-Image.png')">
 			<a href="" class="performance__link">
 				<span class="video-icon"><img src="images/dest/play.svg" alt="play" width="20" height="20"></span>
@@ -413,7 +454,7 @@
 
 	<!--READ the REVIEWS-->
 
-	<div class="read-reviews">
+	<div class="read-reviews d-none">
 		<div class="container">
 			<div class="read-reviews__title">
 				<h2 class="title">Read the Reviews</h2>
@@ -643,8 +684,6 @@
 	</div>
 
 
-
-
 	<footer class="footer">
 
 		<div class="footer-bg" style="background-image: url('images/dest/footer-background.png')">
@@ -660,7 +699,7 @@
 				</div>
 			</div>
 
-			<div class="container">
+			<div class="container footer-container-bg">
 
 				<div class="footer__box">
 					<div class="footer__column">
