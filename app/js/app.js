@@ -265,6 +265,26 @@
         });
 
 
+        // PRODUCT PAGE fly-in
+        $('.js-fly-action').on('click', function (e) {
+            e.preventDefault();
+            $('#js-fly-in').toggleClass('active');
+            $('.fly-hamburger').toggleClass('active');
+            $('body').toggleClass('fixed');
+        });
+
+
+        // // PRODUCT PAGE fly-in choose
+        // $('.choose').on('click', function (e) {
+        //     e.preventDefault();
+        //     // $('.choose').removeClass('active');
+        //     $(this).toggleClass('active');
+        // });
+
+
+
+
+
 
 
     });
