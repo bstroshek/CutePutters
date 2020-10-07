@@ -274,13 +274,6 @@
         });
 
 
-        // // PRODUCT PAGE fly-in choose
-        // $('.choose').on('click', function (e) {
-        //     e.preventDefault();
-        //     // $('.choose').removeClass('active');
-        //     $(this).toggleClass('active');
-        // });
-
 
 
 
