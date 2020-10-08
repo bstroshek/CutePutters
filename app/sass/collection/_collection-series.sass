@@ -76,6 +76,7 @@
           font-size: 10px
           letter-spacing: 2.61px
           line-height: 10px
+          margin-bottom: 8px
       .img-title
         @media (max-width: 576px)
           transform: scale(.9)
@@ -108,6 +109,7 @@
           margin: 0 auto
         @media (max-width: 576px)
           width: 140px
+          font-size: 14px
       .price
         font-family: "Cera GR Bold", serif
         font-size: 24px
@@ -149,6 +151,7 @@
         border: none
         padding: 0
         justify-content: flex-start
+        //align-items: flex-end
       @media (max-width: 576px)
         margin-bottom: 0
       @at-root.scale
@@ -317,6 +320,8 @@
 
 .collection-rx5
   padding-top: 30px
+  @media (max-width: 992px)
+    padding-top: 40px
   .collection__product .text-box
     width: 39%
     @media (max-width: 1200px)
@@ -356,6 +361,12 @@
 .container-img-box
   padding: 0
 
+
+@media (max-width: 992px)
+  .collection__info-box .box-item .descr span
+    font-family: 'Roboto', serif
+  .collection__info-box .box-item:nth-child(2)
+    margin-top: -2px
 
 
 
