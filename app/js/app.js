@@ -216,27 +216,8 @@
         });
 
 
-        // PRODUCT PAGE Reviews section - show more images
 
-        $('.images-box li:lt(6)').show();
-        $('.less').hide();
-        var items =  27;
-        var shown =  6;
-        $('.more').click(function () {
-            $('.less').show();
-            shown = $('.images-box li:visible').length+21;
-            if(shown< items) {
-                $('.images-box li:lt('+shown+')').show(300);
-            } else {
-                $('.images-box li:lt('+items+')').show(300);
-                $('.more').hide();
-            }
-        });
-        $('.less').click(function () {
-            $('.images-box li').not(':lt(6)').hide(300);
-            $('.more').show();
-            $('.less').hide();
-        });
+
 
 
 
@@ -250,7 +231,7 @@
             e.preventDefault();
             $('.rev-less').show();
             shown = $('.read-reviews__item:visible').length+4;
-            if(shown< items) {
+            if(shown> items) {
                 $('.read-reviews__item:lt('+shown+')').show(300);
             } else {
                 $('.read-reviews__item:lt('+items+')').show(300);
@@ -263,6 +244,65 @@
             $('.rev-more').show();
             $('.rev-less').hide();
         });
+
+
+
+        // PRODUCT PAGE Reviews section - show more images
+        if ($(window).width() > 576) {
+            $('.images-box li:lt(6)').show();
+            $('.less').hide();
+            var items =  27;
+            var shown =  6;
+            $('.more').click(function (e) {
+                e.preventDefault();
+                shown = $('.images-box li:visible').length+6;
+                if(shown< items) {
+                    $('.images-box li:lt('+shown+')').show(300);
+                } else {
+                    $('.images-box li:lt('+items+')').show(300);
+                    $('.more').hide();
+                    $('.less').show();
+                }
+            });
+            $('.less').click(function (e) {
+                e.preventDefault();
+                $('.images-box li').not(':lt(6)').hide(300);
+                $('.more').show();
+                $('.less').hide();
+            });
+        }
+
+        if ($(window).width() < 576) {
+            $('.images-box li:lt(3)').show();
+            $('.less').hide();
+            var items =  27;
+            var shown =  3;
+            $('.more').click(function (e) {
+                e.preventDefault();
+                shown = $('.images-box li:visible').length+7;
+                $('#images-box').addClass('images-box-width');
+                if(shown< items) {
+                    $('.images-box li:lt('+shown+')').show(300);
+                } else {
+                    $('.images-box li:lt('+items+')').show(300);
+                    $('.more').hide();
+                    $('.less').show();
+                }
+            });
+            $('.less').click(function (e) {
+                e.preventDefault();
+                $('.images-box li').not(':lt(3)').hide(300);
+                $('.more').show();
+                $('.less').hide();
+            });
+
+        }
+
+
+
+
+
+
 
 
         // PRODUCT PAGE fly-in

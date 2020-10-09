@@ -48,6 +48,9 @@
     @media (max-width: 992px)
       padding-left: 20px
       padding-right: 20px
+      @media (max-width: 576px)
+        padding-left: 0
+        padding-right: 0
     .rating-blk
       width: 100%
       margin-bottom: 30px
@@ -85,17 +88,35 @@
       width: auto
       display: flex
       flex-wrap: wrap
+      @media (max-width: 576px)
+        width: 240px
       li
         display: none
         width: 111px
         height: 111px
         margin: 10px
+        @media (max-width: 576px)
+          width: 12%
+          height: auto
+          min-height: 75px
+          min-width: 75px
+          margin: 0 5px 5px 0
+          img
+            width: 100%
+            height: auto
+            min-height: 75px
+            min-width: 75px
       &__wrapper
         width: 100%
         display: flex
         flex-wrap: wrap
         align-items: center
         position: relative
+        @media (max-width: 576px)
+          width: 320px
+          margin: 0 auto
+        @media (max-width: 320px)
+          width: 100%
       &__more
         height: 111px
         width: 111px
@@ -111,12 +132,24 @@
         justify-content: center
         margin: 10px
         cursor: pointer
+        @media (max-width: 576px)
+          height: 75px
+          width: 80px
+          font-size: 12px
+          letter-spacing: 0
+          line-height: 14px
+          text-align: center
+          padding: 29px
+          margin: 0
         &:hover
           opacity: .8
         &.less
           position: absolute
           bottom: 0
           right: 155px
+          @media (max-width: 576px)
+            bottom: 5px
+            right: 0
 
 
 
@@ -242,7 +275,8 @@
 
 
 
-
+.images-box-width
+  width: 100% !important
 
 
 
