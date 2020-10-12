@@ -309,8 +309,32 @@
         $('.js-fly-action').on('click', function (e) {
             e.preventDefault();
             $('#js-fly-in').toggleClass('active');
+            $('.js-fly-close').toggleClass('active');
+            $('body').toggleClass('fixed');
+        });
+        // PRODUCT PAGE fly-in close
+        $('.js-fly-close').on('click', function (e) {
+            e.preventDefault();
+            $(this).removeClass('active');
+            $('#js-fly-in').removeClass('active');
+            $('body').removeClass('fixed');
+        });
+
+        // PRODUCT PAGE Add to cart fly-in
+        $('.js-add-to-cart').on('click', function (e) {
+            e.preventDefault();
+            $('#js-fly-in-cart').toggleClass('active');
             $('.fly-hamburger').toggleClass('active');
             $('body').toggleClass('fixed');
+        });
+        // PRODUCT PAGE Add to cart fly-in close
+        $('.js-close').on('click', function (e) {
+            e.preventDefault();
+            $('#js-fly-in-cart').removeClass('active');
+            $('.js-fly-close').removeClass('active');
+            $('.js-close').toggleClass('active');
+            $('#js-fly-in').removeClass('active');
+            $('body').removeClass('fixed');
         });
 
 
