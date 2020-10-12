@@ -33,7 +33,7 @@
             autoplay: true,
             autoplaySpeed: 2000,
             speed: 2000,
-            appendArrows: $('.hero-slider-arrows'),
+            appendArrows: $('.hero-arrows'),
             prevArrow:'<span class="hero-slider-left"><img src="images/dest/hero-slider-left.png" alt="icon" width="50" height="100"></span>',
             nextArrow:'<span class="hero-slider-right"><img src="images/dest/hero-slider-right.png" alt="icon" width="50" height="100"></span>'
         });
