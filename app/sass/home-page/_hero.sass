@@ -146,10 +146,15 @@
   padding-bottom: 119px
   @media (min-width: 1440px)
     background: 100% -134px/882px 665px no-repeat
+  @media (max-width: 1200px)
+    padding-left: 50px
+    padding-right: 50px
   @media (max-width: 992px)
     background: 100% -1px/610px no-repeat
   @media(max-width: 768px)
     padding-bottom: 0
+    padding-left: 0
+    padding-right: 0
   @media(max-width: 576px)
     background: 100% -10px/410px no-repeat
   @media(max-width: 380px)
@@ -247,16 +252,50 @@
 
 
 
+.hero-slider-wrapper
+  position: relative
+  width: 100%
+  padding-top: 94px
+  @media (max-width: 992px)
+    padding-top: 40px
+    padding-bottom: 40px
 
 
+.hero-logos
+  width: 100%
+  @media (max-width: 992px)
+    display: none
+  &__item
+    text-align: center
+    height: 87px
+    display: flex
+    align-items: center
+    justify-content: center
+    border: 1px solid #737373
+    cursor: pointer
+    position: relative
+    transition: all .1s
+    &:after
+      display: block
+      content: ''
+      width: 0
+      height: 14px
+      background: transparent
+      position: absolute
+      bottom: 0
+      left: 0
+      transition: width 4s
+  .slick-current
+    .hero-logos__item
+      border-top-color: transparent
+      outline: none
+      &:after
+        right: 0
+        width: 100%
+        background: $accent
 
-
-
-
-
-
-
-
+  .slick-slide:focus
+    outline: none
 
 
 

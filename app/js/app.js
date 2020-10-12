@@ -23,59 +23,100 @@
 
 
 
+        // HOME PAGE SLIDER
 
-
-
-        // HOME PAGE hero tabs
-        $('.tabgroup > div').addClass('hide');
-        $('.tabgroup > div:nth-of-type(2)').removeClass('hide');
-        $('.tabs a').click(function(e){
-            e.preventDefault();
-            var $this = $(this),
-                tabgroup = '#'+$this.parents('.tabs').data('tabgroup'),
-                others = $this.closest('li').siblings().children('a'),
-                target = $this.attr('href');
-            others.removeClass('active');
-            $this.addClass('active');
-            $(tabgroup).children('div').addClass('hide');
-            $(target).removeClass('hide');
-
-        });
-
-
-
-
-
-        // HOME PAGE hero sliders
-
-        $('.js-tour-slider').slick({
-            infinite: true,
+        $('.hero-slider').slick({
             slidesToShow: 1,
-            dots: false,
-            appendArrows: $('.js-tour-slider-arrows'),
+            slidesToScroll: 1,
+            arrows: true,
+            asNavFor: '.hero-logos',
+            autoplay: true,
+            autoplaySpeed: 2000,
+            speed: 2000,
+            appendArrows: $('.hero-slider-arrows'),
             prevArrow:'<span class="hero-slider-left"><img src="images/dest/hero-slider-left.png" alt="icon" width="50" height="100"></span>',
             nextArrow:'<span class="hero-slider-right"><img src="images/dest/hero-slider-right.png" alt="icon" width="50" height="100"></span>'
         });
-
-        $('.js-classic-slider').slick({
-            infinite: true,
-            slidesToShow: 1,
+        $('.hero-logos').slick({
+            slidesToShow: 3,
+            slidesToScroll: 0,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            asNavFor: '.hero-slider',
+            centerPadding: '0px',
             dots: false,
-            appendArrows: $('.js-classic-slider-arrows'),
-            prevArrow:'<span class="hero-slider-left"><img src="images/dest/hero-slider-left.png" alt="icon" width="50" height="100"></span>',
-            nextArrow:'<span class="hero-slider-right"><img src="images/dest/hero-slider-right.png" alt="icon" width="50" height="100"></span>'
+            arrows: false,
+            centerMode: true,
+            focusOnSelect: true,
+            responsive: [
+                {
+                    breakpoint: 1920,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 1660,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 1400,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 1300,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 1250,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 1185,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 1160,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 1150,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 1000,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 990,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                }
+            ]
         });
-
-        $('.js-rx-slider').slick({
-            infinite: true,
-            slidesToShow: 1,
-            dots: false,
-            appendArrows: $('.js-rx-slider-arrows'),
-            prevArrow:'<span class="hero-slider-left"><img src="images/dest/hero-slider-left.png" alt="icon" width="50" height="100"></span>',
-            nextArrow:'<span class="hero-slider-right"><img src="images/dest/hero-slider-right.png" alt="icon" width="50" height="100"></span>'
-        });
-
-
 
 
 
