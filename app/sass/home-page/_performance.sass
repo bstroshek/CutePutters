@@ -41,15 +41,20 @@
           text-align: center
   .video-list
     width: 100%
-    display: flex
-    justify-content: space-between
     margin-bottom: 30px
-    @media (max-width: 992px)
-      overflow-x: scroll
+    //overflow-x: scroll
+    &__container
+      width: 100%
+      max-width: 1134px
+      margin: 0 auto
+      @media(max-width: 1050px)
+        padding: 0
+      @media(min-width: 1500px)
+        max-width: 100%
+      .slick-slide
+      outline: none
     @media (max-width: 576px)
       margin-bottom: 18px
-    @media (max-width: 480px)
-      justify-content: flex-start
     &__title
       color: #000000
       font-family: 'RODUSsquare700', serif
@@ -97,13 +102,7 @@
           letter-spacing: 0.11px
           line-height: 13px
   .video-item
-    width: 24%
     position: relative
-    @media (max-width: 992px)
-      width: max-content
-      margin-right: 32px
-    @media (max-width: 576px)
-      margin-right: 11px
     .video-icon
       position: absolute
       top: 50%
@@ -130,6 +129,7 @@
       @media (max-width: 380px)
         height: 84px
         width: 84px
+
 
 
 .video-icon
@@ -179,6 +179,14 @@
 
 
 
+@media (max-width: 1050px)
+  .video-list
+    .slick-slide
+      margin: 0 10px
+@media (max-width: 576px)
+  .video-list
+    .slick-slide
+      margin: 0 5px
 
 
 

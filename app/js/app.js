@@ -195,6 +195,56 @@
         });
 
 
+        // HOME PAGE Performance section slider
+        $('.video-list').slick({
+            infinite: true,
+            slidesToShow: 7,
+            slidesToScroll: 1,
+            arrows: false,
+            dots: false,
+            swipeToSlide: true,
+            draggable: true,
+            responsive: [
+                {
+                    breakpoint: 1700,
+                    settings: {
+                        slidesToShow: 5
+                    }
+                },
+                {
+                    breakpoint: 1500,
+                    settings: {
+                        slidesToShow: 4
+                    }
+                },
+                {
+                    breakpoint: 1050,
+                    settings: {
+                        variableWidth: true,
+                        slidesToShow: 1
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        variableWidth: true,
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+        $('.video-list').on('wheel', (function(e) {
+            e.preventDefault();
+
+            if (e.originalEvent.deltaY < 0) {
+                $(this).slick('slickNext');
+            } else {
+                $(this).slick('slickPrev');
+            }
+        }));
+
+
+
 
         // COLLECTION PAGE hero scroll to section
 
@@ -377,6 +427,9 @@
             $('#js-fly-in').removeClass('active');
             $('body').removeClass('fixed');
         });
+
+
+
 
 
 
