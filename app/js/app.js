@@ -124,7 +124,7 @@
 
         $('.cure-tabgroup > div').hide();
         $('.cure-tabgroup > div:nth-of-type(2)').show();
-        $('.cure-tabs a').click(function(e){
+        $('.cure-tabs a').hover(function(e){
             e.preventDefault();
             var $this = $(this),
                 tabgroup = '#'+$this.parents('.cure-tabs').data('tabgroup'),
