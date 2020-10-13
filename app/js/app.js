@@ -30,7 +30,7 @@
             slidesToScroll: 1,
             arrows: true,
             asNavFor: '.hero-logos',
-            autoplay: true,
+            autoplay: false,
             autoplaySpeed: 2000,
             speed: 2000,
             appendArrows: $('.hero-arrows'),
@@ -123,7 +123,7 @@
         // HOME PAGE Cure section tabs
 
         $('.cure-tabgroup > div').hide();
-        $('.cure-tabgroup > div:nth-of-type(2)').show();
+        $('.cure-tabgroup > div:nth-of-type(1)').show();
         $('.cure-tabs a').hover(function(e){
             e.preventDefault();
             var $this = $(this),
