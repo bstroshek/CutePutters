@@ -30,7 +30,7 @@
             slidesToScroll: 1,
             arrows: true,
             asNavFor: '.hero-logos',
-            autoplay: false,
+            autoplay: true,
             autoplaySpeed: 2000,
             speed: 2000,
             appendArrows: $('.hero-arrows'),

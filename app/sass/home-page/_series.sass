@@ -36,7 +36,6 @@
         letter-spacing: 0.22px
         line-height: 25px
     .btn
-      width: 164px
       margin: 0 auto
   &__box
     width: 100%
@@ -92,11 +91,13 @@
         height: 15px
         width: 90px
     .item-image
+      height: 410px
       display: block
-      width: 100%
+      width: auto
       max-width: 100%
-      height: auto
       margin: 0 auto
+      object-fit: cover
+      transition: all .3s
       @media (max-width: 768px)
         width: 400px
         height: 400px
@@ -106,18 +107,26 @@
         height: 300px
     .btn
       position: absolute
-      width: 164px
       bottom: 180px
       margin: 0 auto
       left: 50%
       transform: translateX(-50%)
+      opacity: 0
+      z-index: 10
       @media (max-width: 768px)
         position: static
         left: auto
         transform: none
         margin-top: 20px
+        opacity: 1
     .item-info
       width: 100%
+      display: block
+      position: absolute
+      top: 29%
+      opacity: 0
+      transition: all .3s
+      z-index: 10
     .info-row
       width: 100%
       display: flex
@@ -145,15 +154,45 @@
           height: auto
 
 
+@media (min-width: 768px)
+  .series__box
+    .series__item
+      cursor: pointer
+      &:hover
+        .item-info
+          opacity: 1
+        .item-image
+          transform: scale(0.9, 0.9) translate(0px, 53px)
+        .btn
+          opacity: 1
+
+  .classic-box
+    .series__item
+      &:hover
+        .item-image
+          transform: scale(0.8, 0.8) translate(0px, 53px)
+      .item-info
+        top: 26%
+      .info-row .left
+        color: #ffffff
+      .info-row .right
+        color: #ffffff
+
+  .rx-box
+    overflow: hidden
+    .series__item
+      &:hover
+        .item-image
+          transform: scale(0.89, 0.89) translate(0px, 53px)
+      .item-info
+        top: 26%
+
+
+
 .tour-series
   background: #ffffff 0 100%/1382px no-repeat
   @media (max-width: 768px)
     background: #ffffff 0 0/0
-  .series__box
-    align-items: flex-end
-  .item-tour3
-    .item-image
-      width: 83%
 
 .classic-series
   background: center/cover no-repeat
