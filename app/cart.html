@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Cart</title>
+	<meta name="description" content="Home Page">
+	<meta name="viewport" content="width=device-width">
+	<link rel="icon" href="images/favicon.png">
+	<meta property="og:image" content="images/dest/preview.jpg">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+
+	<link rel="stylesheet" href="libs/slick-1.8.1/slick/slick-theme.css">
+	<link rel="stylesheet" href="libs/slick-1.8.1/slick/slick.css">
+
+	<link rel="stylesheet" href="css/app.min.css">
+
+
+
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+	<script src="libs/slick-1.8.1/slick/slick.js"></script>
+	<script src="js/app.min.js"></script>
+
+</head>
+
+<body>
+
+
+	<div class="mobile-nav" id="js-nav">
+		<div class="mobile-nav-top">
+			<ul class="mobile-nav-top-list">
+				<li><a href="" class="logo"><img src="images/dest/Cure%20logo.png" alt="logo" width="84" height="62"></a></li>
+				<li class="mobile-nav-top-item">
+					<div class="right-nav__item cart-mobile"><a class="circle-icon" href=""><img src="images/dest/shopping-cart.svg" alt="icon"></a></div>
+						<a href="" class="hamburger">
+							<span></span>
+							<span></span>
+							<span></span>
+						</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="mobile-nav__main">
+
+			<div class="mobile-nav__main-item">
+				<a href="product.html" class="mobile-nav__link">Shop Putters <img src="images/dest/arrow.svg" alt="icon"></a>
+				<ul class="nav-dropdown__container">
+					<li class="nav-dropdown__item">
+						<a href="collection.html" class="nav-dropdown__item-link">
+							<div class="item-top">
+								<p>SHOP</p>
+								<img src="images/dest/TX-nav.png" alt="collection" width="124" height="34">
+							</div>
+							<div class="item-bottom">
+								<img src="images/dest/Tour%20X3%20top.png" alt="picture" width="218" height="396">
+							</div>
+						</a>
+					</li>
+					<li class="nav-dropdown__item">
+						<a href="collection.html" class="nav-dropdown__item-link">
+							<div class="item-top">
+								<p>SHOP</p>
+								<img src="images/dest/ClassicSeriesLogo.png" alt="collection" width="132" height="25">
+							</div>
+							<div class="item-bottom">
+								<img src="images/dest/CX2-top.png" alt="picture" width="280" height="425">
+							</div>
+						</a>
+					</li>
+					<li class="nav-dropdown__item">
+						<a href="collection.html" class="nav-dropdown__item-link">
+							<div class="item-top">
+								<p>SHOP</p>
+								<img src="images/dest/RXLOGO-nav.png" alt="collection" width="149" height="24">
+							</div>
+							<div class="item-bottom">
+								<img src="images/dest/RX4-top.png" alt="picture" width="350" height="460">
+							</div>
+						</a>
+					</li>
+					<li class="nav-dropdown__item">
+						<a href="collection.html" class="nav-dropdown__item-link nav-dropdown__item-center">
+							<p class="item-text">The</p>
+							<img src="images/dest/Cure%20logo.png" alt="collection" width="88" height="65">
+							<p class="title">Comparision</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="mobile-nav__main-item">
+				<a href="collection.html" class="mobile-nav__link">Shop Accessories & Gear <img src="images/dest/arrow.svg" alt="icon"></a>
+				<ul class="nav-dropdown__container">
+					<li class="nav-dropdown__item">
+						<a href="collection.html" class="nav-dropdown__item-link shaftes-item">
+							<div class="item-top">
+								<p>SHOP</p>
+								<p class="sub-title">Shaftes and Grips</p>
+							</div>
+							<div class="item-bottom">
+								<img class="nav-item-product" src="images/dest/mob-img1.jpg" alt="picture" width="238" height="200">
+							</div>
+						</a>
+					</li>
+					<li class="nav-dropdown__item">
+						<a href="collection.html" class="nav-dropdown__item-link accessories-nav-item">
+							<div class="item-top">
+								<p>SHOP</p>
+								<p class="sub-title">Accessories</p>
+							</div>
+							<div class="item-bottom">
+								<img class="nav-item-product" src="images/dest/acc-nav-2.png" alt="picture" width="250" height="226">
+							</div>
+						</a>
+					</li>
+					<li class="nav-dropdown__item">
+						<a href="collection.html" class="nav-dropdown__item-link accessories-nav-item">
+							<div class="item-top">
+								<p>SHOP</p>
+								<p class="sub-title">The Staff Bag</p>
+							</div>
+							<div class="item-bottom">
+								<img class="nav-item-product" src="images/dest/access3-nav.jpg" alt="picture" width="250" height="249">
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="mobile-nav__main-item more-item">
+				<a href="" class="mobile-nav__link">Explore More <img src="images/dest/Menu%20icon.svg" alt="menu-icon"></a>
+				<ul class="nav-dropdown__container more-drop-container">
+						<li class="nav-dropdown__item more-nav-list">
+							<ul class="more-list">
+								<li><a href="">News & Updates</a></li>
+								<li><a href="">Videos</a></li>
+								<li><a href="">About Us</a></li>
+								<li><a href="">Contact</a></li>
+							</ul>
+
+						</li>
+					</ul>
+			</div>
+
+			<div class="mobile-nav__main-item">
+				<div class="mobile-nav-buttons">
+					<a href="" class="btn">Sign In</a>
+					<a href="" class="btn-dark">Sign up</a>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="hero-bottom md-visible">
+	<div class="container">
+		<ul class="hero-bottom__line">
+			<li>2 Year Warranty</li>
+			<li class="shipping">FREE SHIPPING OVER $249.99</li>
+			<li>MADE IN THE USA</li>
+		</ul>
+	</div>
+</div>
+
+	<section class="hero overflow-visible" style="background-image: url('images/dest/hero-background.jpg')">
+
+		<header class="header">
+			<div class="header__container">
+				<a href="" class="logo"><img src="images/dest/Cure%20logo.png" alt="logo" width="84" height="62"></a>
+				<nav class="main-nav">
+					<ul class="main-nav__list" >
+						<li class="main-nav__item">
+							<a href="product.html" class="nav-underlined">Shop Putters <img src="images/dest/arrow.svg" alt="icon"></a>
+							<div class="nav-dropdown">
+								<ul class="nav-dropdown__container">
+									<li class="nav-dropdown__item">
+										<a href="collection.html" class="nav-dropdown__item-link">
+											<div class="item-top">
+												<p>SHOP</p>
+												<img src="images/dest/TX-nav.png" alt="collection" width="124" height="34">
+											</div>
+											<div class="item-bottom">
+												<img src="images/dest/Tour%20X3%20top.png" alt="picture" width="218" height="396">
+											</div>
+										</a>
+									</li>
+									<li class="nav-dropdown__item">
+										<a href="collection.html" class="nav-dropdown__item-link">
+											<div class="item-top">
+												<p>SHOP</p>
+												<img src="images/dest/ClassicSeriesLogo.png" alt="collection" width="132" height="25">
+											</div>
+											<div class="item-bottom">
+												<img src="images/dest/CX2-top.png" alt="picture" width="280" height="425">
+											</div>
+										</a>
+									</li>
+									<li class="nav-dropdown__item">
+										<a href="collection.html" class="nav-dropdown__item-link">
+											<div class="item-top">
+												<p>SHOP</p>
+												<img src="images/dest/RXLOGO-nav.png" alt="collection" width="149" height="24">
+											</div>
+											<div class="item-bottom">
+												<img src="images/dest/RX4-top.png" alt="picture" width="350" height="460">
+											</div>
+										</a>
+									</li>
+									<li class="nav-dropdown__item">
+										<a href="collection.html" class="nav-dropdown__item-link nav-dropdown__item-center">
+											<div class="item-top">
+												<p>The</p>
+												<img src="images/dest/Cure%20logo.png" alt="collection" width="88" height="65">
+											</div>
+											<div class="item-bottom">
+												<p class="title">Comparision</p>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="main-nav__item">
+							<a href="collection.html" class="nav-underlined">Shop Accessories & Gear <img src="images/dest/arrow.svg" alt="icon"></a>
+							<div class="nav-dropdown">
+								<ul class="nav-dropdown__container">
+									<li class="nav-dropdown__item">
+										<a href="collection.html" class="nav-dropdown__item-link shaftes-item">
+											<div class="item-top">
+												<p>SHOP</p>
+												<p class="sub-title">Shaftes and Grips</p>
+											</div>
+											<img class="nav-item-product" src="images/dest/acc-nav-1.png" alt="picture" width="250" height="221">
+										</a>
+									</li>
+									<li class="nav-dropdown__item">
+										<a href="collection.html" class="nav-dropdown__item-link accessories-nav-item">
+											<div class="item-top">
+												<p>SHOP</p>
+												<p class="sub-title">Accessories</p>
+											</div>
+											<img class="nav-item-product" src="images/dest/acc-nav-2.png" alt="picture" width="250" height="226">
+										</a>
+									</li>
+									<li class="nav-dropdown__item">
+										<a href="collection.html" class="nav-dropdown__item-link accessories-nav-item">
+											<div class="item-top">
+												<p>SHOP</p>
+												<p class="sub-title">The Staff Bag</p>
+											</div>
+											<img class="nav-item-product" src="images/dest/access3-nav.jpg" alt="picture" width="250" height="249">
+										</a>
+									</li>
+									<li class="nav-dropdown__item">
+										<a href="collection.html" class="nav-dropdown__item-link nav-dropdown__item-center shop-all-item" style="background-image: url('images/dest/menu-shop-all.jpg')">
+											<p class="title">Shop All</p>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="main-nav__item"><a href="">Why Cure</a></li>
+					</ul>
+					<ul class="right-nav__list">
+						<li class="main-nav__item right-nav__item explore-more-item md-hidden">
+							<a href="" class="nav-underlined">Explore More <img src="images/dest/Menu%20icon.svg" alt="menu-icon"></a>
+							<div class="nav-dropdown">
+								<ul class="nav-dropdown__container more-drop-container">
+									<li class="nav-dropdown__item more-nav-item">
+										<a href="collection.html" class="nav-dropdown__item-link" style="background-image: url('images/dest/menu-shop-putters.jpg')">
+											<div class="item-top">
+												<p class="shop">SHOP</p>
+												<p class="title">Putters</p>
+											</div>
+										</a>
+									</li>
+									<li class="nav-dropdown__item more-nav-item">
+										<a href="collection.html" class="nav-dropdown__item-link" style="background-image: url('images/dest/shop-accessories.jpg')">
+											<div class="item-top">
+												<p class="shop">SHOP</p>
+												<p class="title">Accessories & Gear</p>
+											</div>
+										</a>
+									</li>
+									<li class="nav-dropdown__item more-nav-list">
+										<ul class="more-list">
+											<li><a href="" class="title">EXPLORE MORE</a></li>
+											<li><a href="">News & Updates</a></li>
+											<li><a href="">Videos</a></li>
+											<li><a href="">About Us</a></li>
+											<li><a href="">Contact</a></li>
+										</ul>
+
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="right-nav__item md-hidden"><a href=""><img src="images/dest/Seach-Icon.svg" alt="icon"></a></li>
+						<li class="right-nav__item"><a class="circle-icon" href=""><img src="images/dest/shopping-cart.svg" alt="icon"></a></li>
+						<li class="right-nav__item md-hidden"><a class="circle-icon" href=""><img src="images/dest/user.svg" alt="icon"></a></li>
+						<li><a href="" class="hamburger main-hamburger">
+							<span></span>
+							<span></span>
+							<span></span>
+						</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+	</section>
+
+
+	<div class="cart">
+		<div class="hero-bottom">
+			<div class="container">
+				<ul class="hero-bottom__line">
+					<li>2 Year Warranty</li>
+					<li class="shipping">FREE SHIPPING OVER $249.99</li>
+					<li>MADE IN THE USA</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="cart__main">
+
+			<!--shopping-start-->
+			<div class="cart__shopping shopping">
+				<h3 class="shopping__title">Shopping Cart</h3>
+				<p class="item__total">You have 1 item in your cart:</p>
+				<div class="shopping-list">
+					<div class="shopping__item">
+						<div class="shopping__image">
+							<img src="images/dest/cart-product@2x.jpg" alt="product" width="250" height="250">
+						</div>
+						<div class="shopping__descr">
+							<h4 class="title">RX5 - High MOI Putter</h4>
+							<ul class="main">
+								<li><span class="prop">Color:</span> <span class="val">Black</span></li>
+								<li><span class="prop">Shaft Type:</span> <span class="val">Straight Chrome</span></li>
+								<li><span class="prop">Dexterity:</span> <span class="val">Right Hand</span></li>
+								<li><span class="prop">Shaft Length:</span> <span class="val">35”</span></li>
+								<li class="bottom"><span class="prop">Extended Weight Kit:</span> <span class="val">NO</span></li>
+							</ul>
+
+						</div>
+						<div class="shopping__total">
+							<p class="price">$259.95</p>
+							<div class="btn-outline">1</div>
+							<div class="links"><a href="">Delete</a> <a href="">Update</a></div>
+						</div>
+					</div>
+					<div class="shopping__item">
+						<div class="shopping__image">
+							<img src="images/dest/cart-product@2x.jpg" alt="product" width="250" height="250">
+						</div>
+						<div class="shopping__descr">
+							<h4 class="title">RX5 - High MOI Putter</h4>
+							<ul class="main">
+								<li><span class="prop">Color:</span> <span class="val">Black</span></li>
+								<li><span class="prop">Shaft Type:</span> <span class="val">Straight Chrome</span></li>
+								<li><span class="prop">Dexterity:</span> <span class="val">Right Hand</span></li>
+								<li><span class="prop">Shaft Length:</span> <span class="val">35”</span></li>
+								<li class="bottom"><span class="prop">Extended Weight Kit:</span> <span class="val">NO</span></li>
+							</ul>
+
+						</div>
+						<div class="shopping__total">
+							<p class="price">$259.95</p>
+							<div class="btn-outline">1</div>
+							<div class="links"><a href="">Delete</a> <a href="">Update</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="extended">
+					<div class="extended__main">
+						<div class="extended__img"><img src="images/dest/cart-img2@2x.jpg" alt="product" width="420" height="160"></div>
+						<div class="extended__descr">
+							<p class="title">Extended Weight Kit</p>
+							<p class="kit">Aluminum 1/8” 6g (2), S. Steel 1/8” 17.5g (2),
+								S. Steel 1/4” 35g (4), 1” Cap Screw 16g (2),
+								3/4” Cap Screw 13.5g (2), 1/2” Cap Screw 11g (2)</p>
+							<div class="btn">Add to Cart - $39.95</div>
+						</div>
+					</div>
+					<div class="extended__bottom">
+						<p class="title">Trade-In Program</p>
+						<p class="text">Trade in your old gear toward a new Cure putter or other items in our online store!</p>
+						<a href="" class="link">(833) 338-CURE <i class="fas fa-caret-right"></i></a>
+					</div>
+
+				</div>
+			</div>
+
+			<!--summary-start-->
+			<div class="cart__summary summary">
+				<h3 class="title">Order Summary</h3>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<!--SECTION CURE-->
+
+	<div class="cure" style="background-image: url('images/dest/cure-bg.png')">
+		<div class="cure__title">
+			<p class="pre-title">THE CURE PERFORMANCE</p>
+			<h2 class="title">Putt better with Cure Putters' advanced technology</h2>
+			<a href="" class="btn-outline">Why Cure?</a>
+		</div>
+
+
+
+		<div class="cure-tabs__wrapper">
+			<div class="container">
+
+				<section id="cure-tab-group" class="cure-tabgroup">
+					<div id="cure-tab1" class="cure-tab-content active">
+						<img src="images/dest/homepage-image-1.png" alt="image" width="1025" height="630">
+					</div>
+					<div id="cure-tab2" class="cure-tab-content">
+
+					</div>
+					<div id="cure-tab3" class="cure-tab-content">
+
+					</div>
+
+				</section>
+
+				<ul class="cure-tabs" data-tabgroup="cure-tab-group">
+					<li>
+						<a href="#cure-tab1" class="active">
+							<span class="data"><span class="numb">99<span>%</span></span><span class="data-title">Data Statstic</span></span>
+							<span class="text">
+								<span class="text-title">Increased Stability</span>
+								<span class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="#cure-tab2">
+							<span class="data"><span class="numb">10<span>%</span></span><span class="data-title">Data Statstic</span></span>
+							<span class="text">
+								<span class="text-title">Improves Accuracy</span>
+								<span class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="#cure-tab3">
+							<span class="data"><span class="numb">30<span>%</span></span><span class="data-title">Data Statstic</span></span>
+							<span class="text">
+								<span class="text-title">Best MOI in the Game</span>
+								<span class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</span>
+							</span>
+						</a>
+					</li>
+				</ul>
+
+			</div>
+
+		</div>
+
+
+		<div class="cure-tabs cure-mobile">
+
+			<div class="container">
+				<div class="cure-slider">
+					<div>
+						<a href="" class="cure-item">
+							<div class="cure-item__top"><img src="images/dest/homepage-image1@2x.png" alt="" width="300" height="300"></div>
+							<div class="cure-item__bottom">
+								<span class="data"><span class="numb">10<span>%</span></span><span class="data-title">Data Statstic</span></span>
+								<span class="text">
+								<span class="text-title">Improves Accuracy</span>
+								<span class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</span>
+								</span>
+							</div>
+
+						</a>
+					</div>
+					<div>
+						<a href="" class="cure-item">
+							<div class="cure-item__top"><img src="images/dest/homepage-image1@2x.png" alt="" width="300" height="300"></div>
+							<div class="cure-item__bottom">
+								<span class="data"><span class="numb">99<span>%</span></span><span class="data-title">Data Statstic</span></span>
+								<span class="text">
+								<span class="text-title">Increased Stability</span>
+								<span class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</span>
+								</span>
+							</div>
+
+						</a>
+					</div>
+					<div>
+						<a href="" class="cure-item">
+							<div class="cure-item__top"><img src="images/dest/homepage-image1@2x.png" alt="" width="300" height="300"></div>
+							<div class="cure-item__bottom">
+								<span class="data"><span class="numb">30<span>%</span></span><span class="data-title">Data Statstic</span></span>
+								<span class="text">
+								<span class="text-title">Best MOI in the Game</span>
+								<span class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</span>
+								</span>
+							</div>
+
+						</a>
+					</div>
+				</div>
+				<div class="cure-slider-arrows"></div>
+
+			</div>
+
+		</div>
+
+
+	</div>
+
+
+
+
+	<footer class="footer">
+
+		<div class="footer-bg" style="background-image: url('images/dest/footer-background.png')">
+
+			<div class="container">
+				<div class="footer__top">
+					<h3 class="title">Improve Your Game</h3>
+					<p class="text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+					<form action="" class="footer__form">
+						<input type="email" class="form-control" placeholder="What is your email?">
+						<input type="submit" class="btn" value="Sign Up Now">
+					</form>
+				</div>
+			</div>
+
+			<div class="container footer-container-bg">
+
+				<div class="footer__box">
+					<div class="footer__column">
+						<h4 class="col-title"><a href="">Customer Care</a></h4>
+						<ul class="col-list">
+							<li class="col-item"><a href="">FAQs</a></li>
+							<li class="col-item"><a href="">Shipping Policy</a></li>
+						</ul>
+					</div>
+					<div class="footer__column">
+						<h4 class="col-title"><a href="">Contact Us</a></h4>
+						<ul class="col-list">
+							<li class="col-item"><a href="mailto:mail@mail">Email Us</a></li>
+							<li class="col-item"><a href="tel:888.888.8888">Call 888.888.8888</a></li>
+						</ul>
+					</div>
+					<div class="footer__column terms-col">
+						<h4 class="col-title"><a href="">Terms & Privacy</a></h4>
+						<ul class="col-list">
+							<li class="col-item"><a href="">Terms of Service</a></li>
+							<li class="col-item"><a href="">Privacy & Cookies</a></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="footer__bottom">
+			<div class="container">
+				<div class="bottom-line">
+					<p class="text">Copyright 2020 Cure Putters</p>
+					<ul class="socials">
+						<li class="socials__item"><a href=""><img src="images/dest/youtube-brands-white.svg" alt="youtube" width="20" height="14"></a></li>
+						<li class="socials__item"><a href=""><img src="images/dest/instagram-brands-white.svg" alt="youtube" width="15" height="15"></a></li>
+						<li class="socials__item"><a href=""><img src="images/dest/facebook-f-brands-white.svg" alt="youtube" width="10" height="16"></a></li>
+						<li class="socials__item"><a href=""><img src="images/dest/twitter-brands-white.svg" alt="youtube" width="17" height="14"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+
+
+
+</body>
+</html>
