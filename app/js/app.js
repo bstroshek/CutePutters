@@ -431,6 +431,35 @@
 
 
 
+        //  RELATED PRODUCTS SLIDER (cart, ...)
+        $('.related__slider').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false,
+            arrows: true,
+            appendArrows: $('.related__slider-arrows'),
+            prevArrow:'<span class="hero-slider-left"><img src="images/dest/hero-slider-left.png" alt="icon" width="50" height="100"></span>',
+            nextArrow:'<span class="hero-slider-right"><img src="images/dest/hero-slider-right.png" alt="icon" width="50" height="100"></span>',
+            responsive: [
+                {
+                    breakpoint: 1400,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+
+            ]
+        });
+
+
+
 
 
 

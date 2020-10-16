@@ -174,7 +174,7 @@
 
 	<section class="hero overflow-visible" style="background-image: url('images/dest/hero-background.jpg')">
 
-		<header class="header">
+		<header class="header md-hidden">
 			<div class="header__container">
 				<a href="" class="logo"><img src="images/dest/Cure%20logo.png" alt="logo" width="84" height="62"></a>
 				<nav class="main-nav">
@@ -190,7 +190,7 @@
 												<img src="images/dest/TX-nav.png" alt="collection" width="124" height="34">
 											</div>
 											<div class="item-bottom">
-												<img src="images/dest/Tour%20X3%20top.png" alt="picture" width="218" height="396">
+												<img src="images/dest/Tour%20X3%20top.png" alt="picture" width="125" height="194">
 											</div>
 										</a>
 									</li>
@@ -201,7 +201,7 @@
 												<img src="images/dest/ClassicSeriesLogo.png" alt="collection" width="132" height="25">
 											</div>
 											<div class="item-bottom">
-												<img src="images/dest/CX2-top.png" alt="picture" width="280" height="425">
+												<img src="images/dest/CX2-top.png" alt="picture" width="133" height="202">
 											</div>
 										</a>
 									</li>
@@ -212,7 +212,7 @@
 												<img src="images/dest/RXLOGO-nav.png" alt="collection" width="149" height="24">
 											</div>
 											<div class="item-bottom">
-												<img src="images/dest/RX4-top.png" alt="picture" width="350" height="460">
+												<img class="nav-putters-modific3" src="images/dest/RX4-top.png" alt="picture" width="162" height="218">
 											</div>
 										</a>
 									</li>
@@ -306,7 +306,7 @@
 							</div>
 						</li>
 						<li class="right-nav__item md-hidden"><a href=""><img src="images/dest/Seach-Icon.svg" alt="icon"></a></li>
-						<li class="right-nav__item"><a class="circle-icon" href=""><img src="images/dest/shopping-cart.svg" alt="icon"></a></li>
+						<li class="right-nav__item"><a class="circle-icon" href="cart.html"><img src="images/dest/shopping-cart.svg" alt="icon"></a></li>
 						<li class="right-nav__item md-hidden"><a class="circle-icon" href=""><img src="images/dest/user.svg" alt="icon"></a></li>
 						<li><a href="" class="hamburger main-hamburger">
 							<span></span>
@@ -322,14 +322,12 @@
 
 
 	<div class="cart">
-		<div class="hero-bottom">
-			<div class="container">
+		<div class="hero-bottom md-hidden">
 				<ul class="hero-bottom__line">
 					<li>2 Year Warranty</li>
 					<li class="shipping">FREE SHIPPING OVER $249.99</li>
 					<li>MADE IN THE USA</li>
 				</ul>
-			</div>
 		</div>
 
 		<div class="cart__main">
@@ -337,15 +335,18 @@
 			<!--shopping-start-->
 			<div class="cart__shopping shopping">
 				<h3 class="shopping__title">Shopping Cart</h3>
-				<p class="item__total">You have 1 item in your cart:</p>
+
 				<div class="shopping-list">
+					<p class="item__total">You have 1 item in your cart:</p>
 					<div class="shopping__item">
 						<div class="shopping__image">
 							<img src="images/dest/cart-product@2x.jpg" alt="product" width="250" height="250">
 						</div>
 						<div class="shopping__descr">
 							<h4 class="title">RX5 - High MOI Putter</h4>
+							<p class="price sm-visible">$259.95</p>
 							<ul class="main">
+								<li class="sm-visible"><span class="prop">Qty:</span> <span class="val">1</span></li>
 								<li><span class="prop">Color:</span> <span class="val">Black</span></li>
 								<li><span class="prop">Shaft Type:</span> <span class="val">Straight Chrome</span></li>
 								<li><span class="prop">Dexterity:</span> <span class="val">Right Hand</span></li>
@@ -355,28 +356,7 @@
 
 						</div>
 						<div class="shopping__total">
-							<p class="price">$259.95</p>
-							<div class="btn-outline">1</div>
-							<div class="links"><a href="">Delete</a> <a href="">Update</a></div>
-						</div>
-					</div>
-					<div class="shopping__item">
-						<div class="shopping__image">
-							<img src="images/dest/cart-product@2x.jpg" alt="product" width="250" height="250">
-						</div>
-						<div class="shopping__descr">
-							<h4 class="title">RX5 - High MOI Putter</h4>
-							<ul class="main">
-								<li><span class="prop">Color:</span> <span class="val">Black</span></li>
-								<li><span class="prop">Shaft Type:</span> <span class="val">Straight Chrome</span></li>
-								<li><span class="prop">Dexterity:</span> <span class="val">Right Hand</span></li>
-								<li><span class="prop">Shaft Length:</span> <span class="val">35”</span></li>
-								<li class="bottom"><span class="prop">Extended Weight Kit:</span> <span class="val">NO</span></li>
-							</ul>
-
-						</div>
-						<div class="shopping__total">
-							<p class="price">$259.95</p>
+							<p class="price sm-hidden">$259.95</p>
 							<div class="btn-outline">1</div>
 							<div class="links"><a href="">Delete</a> <a href="">Update</a></div>
 						</div>
@@ -384,9 +364,12 @@
 				</div>
 				<div class="extended">
 					<div class="extended__main">
-						<div class="extended__img"><img src="images/dest/cart-img2@2x.jpg" alt="product" width="420" height="160"></div>
+						<div class="extended__img">
+							<p class="title sm-visible">Extended Weight Kit</p>
+							<img src="images/dest/cart-img2@2x.jpg" alt="product" width="420" height="160">
+						</div>
 						<div class="extended__descr">
-							<p class="title">Extended Weight Kit</p>
+							<p class="title sm-hidden">Extended Weight Kit</p>
 							<p class="kit">Aluminum 1/8” 6g (2), S. Steel 1/8” 17.5g (2),
 								S. Steel 1/4” 35g (4), 1” Cap Screw 16g (2),
 								3/4” Cap Screw 13.5g (2), 1/2” Cap Screw 11g (2)</p>
@@ -400,132 +383,129 @@
 					</div>
 
 				</div>
-			</div>
+				<a href="" class="continue-shopping"><i class="fas fa-chevron-left"></i> Continue Shopping</a>
 
-			<!--summary-start-->
-			<div class="cart__summary summary">
-				<h3 class="title">Order Summary</h3>
-			</div>
-		</div>
-	</div>
-
-
-
-
-	<!--SECTION CURE-->
-
-	<div class="cure" style="background-image: url('images/dest/cure-bg.png')">
-		<div class="cure__title">
-			<p class="pre-title">THE CURE PERFORMANCE</p>
-			<h2 class="title">Putt better with Cure Putters' advanced technology</h2>
-			<a href="" class="btn-outline">Why Cure?</a>
-		</div>
-
-
-
-		<div class="cure-tabs__wrapper">
-			<div class="container">
-
-				<section id="cure-tab-group" class="cure-tabgroup">
-					<div id="cure-tab1" class="cure-tab-content active">
-						<img src="images/dest/homepage-image-1.png" alt="image" width="1025" height="630">
-					</div>
-					<div id="cure-tab2" class="cure-tab-content">
-
-					</div>
-					<div id="cure-tab3" class="cure-tab-content">
-
-					</div>
-
-				</section>
-
-				<ul class="cure-tabs" data-tabgroup="cure-tab-group">
-					<li>
-						<a href="#cure-tab1" class="active">
-							<span class="data"><span class="numb">99<span>%</span></span><span class="data-title">Data Statstic</span></span>
-							<span class="text">
-								<span class="text-title">Increased Stability</span>
-								<span class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</span>
-							</span>
-						</a>
+				<ul class="fly-bottom cart-fly-bottom">
+					<li class="left">
+						<p class="title">Trade-In Program</p>
+						<p class="text">Trade in your old gear toward a new Cure putter or other items in our online store!</p>
 					</li>
-					<li>
-						<a href="#cure-tab2">
-							<span class="data"><span class="numb">10<span>%</span></span><span class="data-title">Data Statstic</span></span>
-							<span class="text">
-								<span class="text-title">Improves Accuracy</span>
-								<span class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</span>
-							</span>
-						</a>
-					</li>
-					<li>
-						<a href="#cure-tab3">
-							<span class="data"><span class="numb">30<span>%</span></span><span class="data-title">Data Statstic</span></span>
-							<span class="text">
-								<span class="text-title">Best MOI in the Game</span>
-								<span class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</span>
-							</span>
-						</a>
+					<li class="right">
+						<p class="title">(833) 338-CURE</p>
+						<p class="text">Need help with
+							your order?
+							Give us a call</p>
 					</li>
 				</ul>
 
 			</div>
 
-		</div>
-
-
-		<div class="cure-tabs cure-mobile">
-
-			<div class="container">
-				<div class="cure-slider">
-					<div>
-						<a href="" class="cure-item">
-							<div class="cure-item__top"><img src="images/dest/homepage-image1@2x.png" alt="" width="300" height="300"></div>
-							<div class="cure-item__bottom">
-								<span class="data"><span class="numb">10<span>%</span></span><span class="data-title">Data Statstic</span></span>
-								<span class="text">
-								<span class="text-title">Improves Accuracy</span>
-								<span class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</span>
-								</span>
-							</div>
-
-						</a>
-					</div>
-					<div>
-						<a href="" class="cure-item">
-							<div class="cure-item__top"><img src="images/dest/homepage-image1@2x.png" alt="" width="300" height="300"></div>
-							<div class="cure-item__bottom">
-								<span class="data"><span class="numb">99<span>%</span></span><span class="data-title">Data Statstic</span></span>
-								<span class="text">
-								<span class="text-title">Increased Stability</span>
-								<span class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</span>
-								</span>
-							</div>
-
-						</a>
-					</div>
-					<div>
-						<a href="" class="cure-item">
-							<div class="cure-item__top"><img src="images/dest/homepage-image1@2x.png" alt="" width="300" height="300"></div>
-							<div class="cure-item__bottom">
-								<span class="data"><span class="numb">30<span>%</span></span><span class="data-title">Data Statstic</span></span>
-								<span class="text">
-								<span class="text-title">Best MOI in the Game</span>
-								<span class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</span>
-								</span>
-							</div>
-
-						</a>
-					</div>
+			<!--summary-start-->
+			<div class="cart__summary summary">
+				<h3 class="summary__title">Order Summary</h3>
+				<ul class="summary__main">
+					<li class="summary__main-subtotal"><span class="prop">Subtotal</span> <span class="val">$259.95</span></li>
+					<li class="main-zip"><span class="prop">Zip Code</span> <input class="form-control" type="text"></li>
+					<li><span class="prop">Shipping</span> <span class="val">Free</span></li>
+					<li><span class="prop">Tax</span> <span class="val">$18.19</span></li>
+					<li class="main-total"><span class="prop">Total</span> <span class="val">$278.14</span></li>
+					<li class="main-promo"><span class="prop">Promo Code</span> <span class="val"></span></li>
+					<li class="main-apply"><input type="text" class="form-control"> <a href="" class="btn-dark">Apply</a></li>
+				</ul>
+				<div class="summary__buttons">
+					<a href="" class="btn">Checkout Now</a>
+					<a href="" class="btn paypal"><img src="images/dest/paypal@2x.png" alt="paypal" width="121" height="23"></a>
 				</div>
-				<div class="cure-slider-arrows"></div>
-
 			</div>
-
 		</div>
-
-
 	</div>
+
+
+
+
+	<!--SECTION RELATED-->
+
+	<div class="related">
+		<h2 class="related__title">You might also like these items</h2>
+			<div class="related__slider-wrapper">
+				<div class="related__slider">
+					<a href="" class="related__item">
+						<img src="images/dest/rel1@2x.jpg" alt="product" width="381" height="373">
+						<span class="title">Cure Putters Staff Bag</span>
+						<span class="price">$265.00</span>
+						<span class="rate-stars">
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+						</span>
+					</a>
+					<a href="" class="related__item">
+						<img src="images/dest/rel2@2x.jpg" alt="product" width="381" height="373">
+						<span class="title">Winn - White</span>
+						<span class="price">$12.95</span>
+						<span class="rate-stars">
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+						</span>
+					</a>
+					<a href="" class="related__item">
+						<img src="images/dest/rel3@2x.jpg" alt="product" width="381" height="373">
+						<span class="title">Cure Putters Staff Bag</span>
+						<span class="price">$265.00</span>
+						<span class="rate-stars">
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+						</span>
+					</a>
+					<a href="" class="related__item">
+						<img src="images/dest/rel2@2x.jpg" alt="product" width="381" height="373">
+						<span class="title">Winn - White</span>
+						<span class="price">$12.95</span>
+						<span class="rate-stars">
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+						</span>
+					</a>
+					<a href="" class="related__item">
+						<img src="images/dest/rel2@2x.jpg" alt="product" width="381" height="373">
+						<span class="title">Winn - White</span>
+						<span class="price">$12.95</span>
+						<span class="rate-stars">
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+						</span>
+					</a>
+					<a href="" class="related__item">
+						<img src="images/dest/rel2@2x.jpg" alt="product" width="381" height="373">
+						<span class="title">Winn - White</span>
+						<span class="price">$12.95</span>
+						<span class="rate-stars">
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+						</span>
+					</a>
+				</div>
+				<div class="related__slider-arrows"></div>
+			</div>
+	</div>
+
 
 
 

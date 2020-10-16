@@ -6,11 +6,20 @@
   max-width: 1240px
   margin: 0 auto
   padding-top: 50px
+  @media (max-width: 1240px)
+    padding-right: 50px
+    padding-left: 50px
+  @media (max-width: 992px)
+    padding-top: 0
+  @media (max-width: 576px)
+    padding-right: 20px
+    padding-left: 20px
   .hero-bottom
     width: 100%
     background-color: #f2f2f2
     &__line
       padding: 7px 0
+      width: 100%
       li
         color: #000000
         font-size: 12.7px
@@ -25,21 +34,39 @@
     padding-top: 30px
     display: flex
     justify-content: space-between
+    @media (max-width: 992px)
+      flex-wrap: wrap
+      padding-bottom: 30px
+      border-bottom: 1px solid rgba(0, 0, 0, 0.11)
+
+
 
 .shopping
   width: 60%
   max-width: 770px
+  position: relative
+  @media (max-width: 1200px)
+    width: 56%
+  @media (max-width: 992px)
+    width: 100%
+    max-width: 100%
+    margin-bottom: 40px
+  @media (max-width: 576px)
+    margin-bottom: 0
   .shopping-list
     width: 100%
     position: relative
+    padding-top: 10px
   .item__total
     color: #000000
     font-family: 'Cera GR Bold', serif
     font-size: 15px
     margin: 0
     position: absolute
-    top: 25px
+    top: 8px
     left: 0
+    @media (max-width: 992px)
+      display: none
   &__title
     color: #000000
     font-family: 'Cera GR Bold', serif
@@ -47,8 +74,14 @@
     letter-spacing: 0
     line-height: 45px
     text-align: center
-    padding: 10px 0 14px
+    padding: 17px 0 14px
     border-bottom: 1px solid rgba(0, 0, 0, 0.11)
+    @media (max-width: 992px)
+      border: none
+      margin: 0
+    @media (max-width: 576px)
+      font-size: 20px
+      padding: 0
   &__item
     padding: 40px 0
     width: 100%
@@ -56,12 +89,24 @@
     justify-content: flex-start
     align-items: flex-start
     border-bottom: 1px solid rgba(0, 0, 0, 0.11)
+    @media (max-width: 768px)
+      flex-wrap: wrap
+    @media (max-width: 576px)
+      padding: 20px 0
   &__image
     width: 40%
     max-width: 250px
     height: auto
     max-height: 250px
     margin-right: 30px
+    @media (max-width: 1200px)
+      width: 32%
+    @media (max-width: 768px)
+      width: 45%
+      max-width: 100%
+      max-height: max-content
+    @media (max-width: 576px)
+      margin-right: 15px
     img
       display: block
       width: 100%
@@ -70,6 +115,14 @@
     width: 40%
     max-width: 340px
     padding-right: 30px
+    @media (max-width: 1200px)
+      width: 36%
+    @media (max-width: 992px)
+      width: 40%
+    @media (max-width: 768px)
+      width: 48%
+      padding: 0
+      max-width: 100%
     .title
       color: #000000
       font-family: 'Cera GR Bold', serif
@@ -78,24 +131,47 @@
       letter-spacing: normal
       line-height: 25px
       margin: 0 0 28px
+      @media (max-width: 576px)
+        line-height: 20px
+        font-size: 12px
+        color: #333333
+        margin-bottom: 0
+    .price
+      @media (max-width: 576px)
+        color: #565656
+        font-family: "Cera GR - Regular", serif
+        line-height: 20px
+        font-size: 12px
     .main
       color: #000000
       font-size: 12px
       font-style: normal
       letter-spacing: normal
       line-height: 25px
+      @media (max-width: 576px)
+        font-size: 10px
+        color: #333333
+        line-height: 15px
       .prop
         font-family: 'Cera GR Bold', serif
       .val
         font-family: 'CeraGR', serif
       .bottom
         margin-top: 28px
+        @media (max-width: 576px)
+          margin-top: 18px
   &__total
     width: 22%
     max-width: 200px
     text-align: center
+    @media (max-width: 768px)
+      width: 100%
+      max-width: 100%
+      margin-top: 24px
     .btn-outline
       margin: 0 auto
+      @media (max-width: 768px)
+        width: 100%
     .price
       color: #000000
       font-family: 'Cera GR Bold', serif
@@ -110,20 +186,51 @@
         font-weight: 700
         line-height: 21px
         padding: 5px
+  .continue-shopping
+    position: absolute
+    right: 0
+    bottom: -60px
+    color: #D60514
+    font-family: 'Cera GR Bold', serif
+    font-size: 16px
+    letter-spacing: 0
+    line-height: 20px
+    @media (max-width: 992px)
+      display: none
+
 
 
 .extended
   width: 100%
   padding: 40px 0 10px
   border-bottom: 1px solid rgba(0, 0, 0, 0.11)
+  @media (max-width: 576px)
+    padding: 19px 0 0
   &__main
     width: 100%
     display: flex
     margin-bottom: 40px
+    @media (max-width: 768px)
+      flex-wrap: wrap
+      margin-bottom: 29px
+    .title
+      @media (max-width: 768px)
+        color: #4C4C4C
+        font-family: 'Cera GR Bold', serif
+        font-size: 18px
+        letter-spacing: 0
+        line-height: 24px
+        margin-bottom: 12px
+      @media (max-width: 576px)
+        font-size: 12px
   &__img
     width: 60%
     max-width: 420px
     margin-right: 50px
+    @media (max-width: 768px)
+      width: 100%
+      max-width: 100%
+      margin: 0 0 10px
     img
       display: block
       width: 100%
@@ -131,6 +238,15 @@
   &__descr
     width: 39%
     max-width: 300px
+    @media (max-width: 768px)
+      width: 100%
+      max-width: 100%
+    .btn
+      @media (max-width: 768px)
+        width: 100%
+        margin-top: 15px
+        @media (max-width: 576px)
+          margin: 0
     .title
       color: #333333
       font-family: 'Cera GR Bold', serif
@@ -146,6 +262,10 @@
       letter-spacing: 0.38px
       line-height: 18px
       margin-bottom: 0
+      @media (max-width: 576px)
+        font-size: 10px
+        letter-spacing: 0.31px
+        line-height: 16px
     .btn
       width: 100%
   &__bottom
@@ -153,20 +273,20 @@
     display: flex
     align-items: center
     justify-content: space-between
+    @media (max-width: 768px)
+      display: none
     .title
       color: #000000
       font-family: 'Cera GR Bold', serif
       font-size: 18px
       font-weight: 700
       letter-spacing: -0.21px
-      line-height: 45.16px
       margin: 0
     .text
       color: #000000
       font-family: 'CeraGR', serif
       font-size: 12px
       font-weight: 400
-      line-height: 45.16px
       margin: 0
     .link
       color: #d60514
@@ -174,10 +294,15 @@
       font-size: 14px
       font-weight: 700
       text-transform: uppercase
+      min-width: 112px
       &:hover
         color: #e71f13
 
 
+.cart-fly-bottom
+  display: none
+  @media (max-width: 768px)
+    display: flex
 
 
 
@@ -194,7 +319,139 @@
 
 .summary
   width: 40%
+  height: max-content
   max-width: 420px
+  padding: 27px 30px 40px
+  background-color: #F8F8F8
+  @media (max-width: 992px)
+    width: 100%
+    max-width: 100%
+  @media (max-width: 576px)
+    padding: 22px 20px 20px
+  &__title
+    color: #000000
+    font-family: 'Cera GR Bold', serif
+    font-size: 24px
+    font-weight: 700
+    text-align: center
+    margin: 0
+    padding-bottom: 16px
+    border-bottom: 1px solid rgba(0, 0, 0, 0.11)
+    @media (max-width: 576px)
+      font-size: 16px
+      letter-spacing: 0
+      line-height: 20px
+  &__main
+    width: 100%
+    margin-bottom: 55px
+    @media (max-width: 576px)
+      margin-bottom: 29px
+    li
+      display: flex
+      align-items: center
+      justify-content: space-between
+      width: 100%
+      margin: 22px 0
+      @media (max-width: 576px)
+        margin: 10px 0
+    .prop
+      color: #000000
+      font-family: 'Cera GR Bold', serif
+      font-size: 16px
+      font-weight: 700
+      font-style: normal
+      letter-spacing: normal
+      line-height: normal
+      text-align: left
+      @media (max-width: 576px)
+        line-height: 15px
+        font-size: 12px
+    .val
+      color: #333333
+      font-family: 'Cera GR Bold', serif
+      font-size: 16px
+      font-weight: 700
+      font-style: normal
+      letter-spacing: normal
+      line-height: normal
+      text-align: right
+      text-transform: uppercase
+      @media (max-width: 576px)
+        line-height: 15px
+        font-size: 12px
+    &-subtotal
+      .val
+        color: #000000
+        font-family: 'Cera GR Bold', serif
+        font-size: 18px
+        letter-spacing: 0
+        @media (max-width: 576px)
+          font-size: 12px
+          line-height: 15px
+    .main-zip
+      margin: 20px 0
+      @media (max-width: 576px)
+        margin: 14px 0
+    .main-total
+      padding: 11px 0 43px
+      margin: 0
+      border-top: 1px solid rgba(0, 0, 0, 0.11)
+      border-bottom: 1px solid rgba(0, 0, 0, 0.11)
+      @media (max-width: 576px)
+        padding-bottom: 20px
+      .prop
+        color: #333333
+        font-family: 'Cera GR Bold', serif
+        font-size: 24px
+        letter-spacing: 0
+        line-height: 30px
+        @media (max-width: 576px)
+          font-size: 16px
+          line-height: 20px
+      .val
+        color: #3A3A3A
+        font-family: 'Cera GR Bold', serif
+        font-size: 24px
+        letter-spacing: 0
+        line-height: 30px
+        @media (max-width: 576px)
+          font-size: 16px
+          line-height: 20px
+    .main-promo
+      margin: 18px 0
+      .val
+        display: block
+        width: 20px
+        height: 2px
+        background-color: #333333
+    .main-apply
+      .btn-dark
+        width: 110px
+  .form-control
+    border: 1px solid #E7E7E7
+    border-radius: 22.5px
+    background-color: #FFFFFF
+    width: 240px
+    @media (max-width: 576px)
+      height: 34px
+  &__buttons
+    width: 100%
+    .btn
+      width: 100%
+      margin-bottom: 20px
+    .paypal
+      background-color: #0A47AF
+      &:hover
+        background-color: #0a49ce
+
+
+
+
+
+
+
+
+
 
 
 
