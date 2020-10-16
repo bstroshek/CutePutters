@@ -214,12 +214,17 @@ body.fixed
         line-height: 18px
         text-align: center
         margin: 0 0 5px
+        @media (max-width: 380px)
+          font-size: 10px
     p.sub-title
       color: #3a3a3a
       font-family: 'Cera GR Bold', serif
       font-size: 18px
       font-weight: 700
       letter-spacing: 1.1px
+      @media (max-width: 380px)
+        color: #333333
+        font-size: 14px
     .nav-item-product
       width: 100%
       height: auto
@@ -352,9 +357,9 @@ body.fixed
       width: 40px
   &__main
     width: 100%
-    padding: 30px 20px 95px
+    padding: 21px 20px 95px
     &-item
-      margin-bottom: 40px
+      margin-bottom: 22px
   &__link
     color: #333333
     font-family: 'CeraGRMedium', serif
@@ -499,9 +504,22 @@ body.fixed
   height: 218px
 
 
-
-
-
+@media (max-width: 460px)
+  .nav-dropdown__item
+    position: relative
+    overflow: hidden
+  .mobile-nav .nav-dropdown__item-link .item-bottom img.mobile-nav-image-acc
+    height: 139px
+    width: 187px
+    position: absolute
+    top: -10px
+    right: -45px
+  .mobile-nav .nav-dropdown__item-link .item-bottom img.mobile-nav-image-bag
+    height: 174px
+    width: 197px
+    position: absolute
+    top: -26px
+    right: -36px
 
 
 
