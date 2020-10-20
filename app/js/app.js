@@ -443,7 +443,7 @@
             nextArrow:'<span class="hero-slider-right"><img src="images/dest/hero-slider-right.png" alt="icon" width="50" height="100"></span>',
             responsive: [
                 {
-                    breakpoint: 1400,
+                    breakpoint: 1500,
                     settings: {
                         slidesToShow: 3,
                     }
