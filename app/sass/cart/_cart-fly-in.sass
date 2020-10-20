@@ -1,8 +1,12 @@
 /*! * CART FLY-IN Start */
 
 .fly-cart
+  @media (max-width: 460px)
+    margin-top: 37px
   .fly-top
     margin-bottom: 0
+    @media (max-width: 460px)
+      padding-top: 19px
   .fly-main
     padding-top: 0
   &__product
@@ -12,13 +16,19 @@
     justify-content: space-between
     padding: 30px 0
     border-bottom: 1px solid #E4E4E4
+    @media (max-width: 460px)
+      justify-content: flex-start
     .product-image
       width: 180px
+      @media (max-width: 460px)
+        max-width: 130px
       img
         width: 100%
         height: auto
     .product-description
       width: 189px
+      @media (max-width: 460px)
+        padding-left: 20px
       .top
         margin-bottom: 26px
         @media (max-width: 460px)
