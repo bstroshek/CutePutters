@@ -12,10 +12,10 @@
     @media (max-width: 768px)
       flex-wrap: wrap
   &__top
-    width: 100%
+    width: 50%
     display: flex
     align-items: center
-    justify-content: space-between
+    justify-content: flex-start
     margin-bottom: 74px
     @media (max-width: 992px)
       justify-content: flex-start
@@ -28,6 +28,7 @@
       font-weight: bold
       letter-spacing: 4.18px
       line-height: 16px
+      margin-right: 32px
       @media (max-width: 992px)
         margin-right: 10px
       @media (max-width: 576px)
@@ -36,6 +37,7 @@
         line-height: 9px
         margin-right: 0
     .series-title img
+      margin-right: 30px
       @media (max-width: 576px)
         transform: scale(.6)
     .title
@@ -54,6 +56,11 @@
     .title-rate
       display: flex
       align-items: center
+      margin-right: 88px
+      @media (max-width: 1100px)
+        margin-right: 5%
+      @media (max-width: 1000px)
+        margin-right: 0
       span
         color: #FFFFFF
         font-family: 'Roboto', serif
@@ -556,6 +563,28 @@
 
 .fly-item.product__description .colors
   justify-content: flex-start
+
+
+
+.сustomize-box
+  width: 100%
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.сustomize.fixed
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  background-color: #01232d
+  z-index: 20
+  .сustomize-box
+    max-width: 1112px
+    margin: 0 auto
+    padding: 20px 0 20px 10px
+  .product__top
+    margin: 0
 
 
 /*! * PRODUCT PAGE Product main Section End */

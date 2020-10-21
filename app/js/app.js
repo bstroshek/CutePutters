@@ -261,6 +261,20 @@
             }, 1000);
         }
 
+        // PRODUCT PAGE fixed Customize line
+
+        function fixDiv() {
+            var $cache = $('.сustomize');
+            if ($(window).scrollTop() > 50){
+                $cache.addClass('fixed');
+            }
+            else {
+                $cache.removeClass('fixed');
+            }
+
+        }
+        $(window).scroll(fixDiv);
+        fixDiv();
 
         // PRODUCT PAGE Product slider
 
