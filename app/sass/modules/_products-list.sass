@@ -9,8 +9,10 @@
     .list-item
       width: 28.5%
       margin-right: 4.5%
-      margin-bottom: 4.5%
+      margin-bottom: 4%
       overflow: hidden
+      transition: all .3s
+      padding: 5px 5px 20px
       img
         width: 100%
         max-width: 100%
@@ -18,9 +20,10 @@
         height: auto
         margin-bottom: 10px
         transition: all .3s
-    .related__item
-      &:hover img
-        transform: scale(1.05, 1.05)
+      &:hover
+        box-shadow: 0 0 20px rgba(204, 204, 204, 0.5)
+        img
+          transform: scale(1.05, 1.05)
 
 
 .accessories-products-list
@@ -29,14 +32,16 @@
   max-width: 1270px
   margin: 0 auto
   padding-left: 4.5%
-  .related__item .price
-    color: #001e28
-    font-family: 'Cera GR Bold', serif
-    font-size: 18px
-    font-weight: 700
-    font-style: normal
-    letter-spacing: 1px
-    line-height: 28px
+  .related__item
+    .price
+      color: #001e28
+      font-family: 'Cera GR Bold', serif
+      font-size: 18px
+      font-weight: 700
+      font-style: normal
+      letter-spacing: 1px
+      line-height: 28px
+
 
 
 
