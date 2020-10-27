@@ -194,6 +194,8 @@
     padding-bottom: 46px
   .cure-tabs__wrapper
     padding-top: 0
+  .cure__title
+    margin-bottom: 49px
   .cure__title .title
     width: 100%
   .cure-tabgroup
@@ -206,28 +208,46 @@
     left: auto
     margin: 0 auto
   .cure-tabs
-    margin-top: -88px
-    width: 100%
-    margin-left: 0
+    width: 97%
+    margin-top: -71px
+    margin-left: auto
+    margin-right: auto
     display: flex
     justify-content: space-between
     @media (max-width: 992px)
       margin: 0
+      width: 100%
     li
-      width: 31%
+      width: 33%
       a
         flex-direction: column
-        align-items: flex-start
+        align-items: center
         padding-top: 42px
         padding-bottom: 42px
+        justify-content: space-between
+        text-align: center
+        min-height: 260px
         .text
           padding-left: 0
+        .text-title
+          margin-bottom: 0
+        .description
+          font-size: 24px
+          letter-spacing: 0.48px
+          line-height: 30px
         &:before
-          display: none
-        .numb
-          line-height: 55px
-        .data-title
-          margin-bottom: 17px
+          left: auto
+          top: 0
+          height: 5px
+          width: 220px
+        &:hover
+          border-radius: 3px
+          background-color: #FFFFFF
+          box-shadow: 2px 2px 15px 0 #E2E2E2
+  .cure-tab-content
+    img
+      @media (min-width: 1400px)
+        max-width: 100%
 
 
 

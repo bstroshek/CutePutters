@@ -3,6 +3,10 @@
 .included
   width: 100%
   padding: 97px 0 138px
+  @media(max-width: 992px)
+    padding: 70px 0 30px
+  @media(max-width: 768px)
+    padding: 40px 0 0
   &__container
     width: 100%
     max-width: 1200px
@@ -14,6 +18,8 @@
   &__title-box
     text-align: center
     margin-bottom: 88px
+    @media(max-width: 992px)
+      margin-bottom: 40px
   &__pre-title
     color: #000000
     font-family: 'RODUSsquare700', serif
@@ -24,6 +30,12 @@
     text-align: center
     text-transform: uppercase
     margin-bottom: 20px
+    @media(max-width: 576px)
+      font-size: 10px
+      font-weight: bold
+      letter-spacing: 2.61px
+      line-height: 10px
+      margin-bottom: 10px
   &__title
     color: #000000
     font-family: 'Cera GR Bold', serif
@@ -32,24 +44,41 @@
     line-height: 45px
     text-align: center
     margin: 0
-
+    @media(max-width: 576px)
+      font-size: 20px
+      letter-spacing: 0.22px
+      line-height: 25px
 
 .kit
   margin-bottom: 115px
   width: 100%
   overflow-x: scroll
+  @media (max-width: 768px)
+    overflow-x: hidden
   &__title
     width: 100%
     display: flex
     align-items: flex-end
     justify-content: space-between
+    margin-bottom: 31px
+    @media (max-width: 768px)
+      margin-bottom: 19px
     .title
       color: #000000
       font-family: 'Cera GR Bold', serif
       font-size: 24px
       letter-spacing: 0.27px
       line-height: 30px
-      margin: 0 0 0 8px
+      padding: 0 0 0 8px
+      margin: 0
+      display: block
+      max-width: max-content
+      width: 100%
+      @media (max-width: 768px)
+        padding: 0 10px 0 0
+        font-size: 14px
+        letter-spacing: 0.16px
+        line-height: 18px
     hr
       width: 100%
       border-bottom: 1px solid #D0D0D0
@@ -62,23 +91,22 @@
     display: flex
     align-items: flex-start
     justify-content: space-between
-  &__title
-    color: #000000
-    font-family: 'Cera GR Bold', serif
-    font-size: 24px
-    letter-spacing: 0.27px
-    line-height: 30px
-    margin-bottom: 31px
   &__elements
-    display: flex
-    box-shadow: 5px 5px 10px #e2e2e2
-    background-color: #f5f5f5
-    padding: 30px 45px
-    li
-      display: flex
-      flex-direction: column
-      align-items: center
-      text-align: center
+    img
+      box-shadow: 5px 5px 10px #e2e2e2
+      @media (max-width: 768px)
+        width: 100%
+        max-width: 100%
+        display: block
+        height: auto
+      &.sm-hidden
+        display: block
+        @media (max-width: 768px)
+          display: none
+      &.sm-visible
+        display: none
+        @media (max-width: 768px)
+          display: block
     .title
       color: #000000
       font-family: Roboto, serif
@@ -90,38 +118,69 @@
 
 .kit-top
   margin-bottom: 116px
+  @media (max-width: 768px)
+    margin-bottom: 40px
   .kit__box
     padding-bottom: 10px
+    @media (max-width: 768px)
+      flex-direction: column
 .kit__item-basic
   width: 760px
   margin-right: 100px
   @media (max-width: 1400px)
     margin-right: 0
+  @media (max-width: 768px)
+    width: 100%
   .kit__title hr
     max-width: 550px
 .kit__item-cure
   width: 340px
   margin: 0
+  @media (max-width: 1200px)
+    margin-left: 50px
+  @media (max-width: 768px)
+    margin-top: 40px
+    margin-left: 0
+    width: 100%
   .kit__title hr
     max-width: 116px
-  .kit__elements
-    padding: 40px 0 30px 0
-    background-color: #faf8f9
+    @media (max-width: 768px)
+      max-width: 100%
+  .kit__elements img
+    @media (max-width: 768px)
+      max-width: 340px
 
 .kit-bottom
   margin: 0
   width: 100%
   .kit__title hr
     max-width: 600px
+    @media (max-width: 768px)
+      width: 100%
+      max-width: 100%
   .kit__box-item
     width: 100%
   .btn
     width: 300px
+    min-width: 300px
     border-radius: 22.5px
     padding: 0
     height: 45px
     margin-bottom: -10px
+    margin-left: 40px
+    @media (max-width: 768px)
+      display: none
+  .kit__elements
+    img
+      @media (min-width: 1400px)
+        width: 100%
+        max-width: 100%
+        height: auto
 
+.kit-btn
+  width: 100%
+  max-width: 280px
+  margin: 20px auto 0
 
 
 
