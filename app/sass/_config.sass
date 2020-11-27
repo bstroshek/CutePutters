@@ -44,7 +44,12 @@ $cera: 'CeraGR', sans-serif
 
 .d-none
 	display: none
-
+.xs-down-hidden
+	@media (max-width: 576px)
+		display: none!important
+.xs-up-hidden
+	@media (min-width: 576px)
+		display: none!important
 
 .sm-visible
 	display: none
