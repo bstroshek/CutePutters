@@ -1,10 +1,252 @@
-/*! * Start Comparison Page */
+/*! * Start Why Cure Page */
 
 .why-cure-hero
+  text-align: center
+  color: #ffffff
+  width: 100%
+  max-width: 569px
+  margin: 10px auto 30px
+  .pre-title
+    font-family: 'RODUSsquare700', serif
+    font-size: 18px
+    font-style: normal
+    letter-spacing: 4.2px
+    line-height: 28px
+    text-align: center
+    text-transform: uppercase
+    margin-bottom: 40px
+  .title
+    font-family: 'RODUSsquare700', serif
+    font-size: 48px
+    font-style: normal
+    letter-spacing: 0.53px
+    line-height: 62px
+    text-align: center
+  .hero-text
+    font-family: 'CeraGR', serif
+    font-size: 24px
+    font-weight: 400
+    font-style: normal
+    letter-spacing: 0.75px
+    line-height: 40px
+    text-align: center
+
+.why-tabs
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  &__item
+    width: 50%
+    text-align: center
+  &__title
+    width: 100%
+    padding: 38px 0 39px
+    color: #ffffff
+    font-family: 'RODUSsquare700', serif
+    font-size: 20px
+    font-style: normal
+    letter-spacing: 2.22px
+    line-height: normal
+    text-transform: uppercase
+    background-image: linear-gradient(207deg, #333a3e 0%, #171b1d 100%)
+    display: inline-block
+    text-align: center
+    span
+      color: #d60514
+    &.active
+      background: #ffffff
+      color: #000000
+
+
+.moi-title
+  .title span
+    display: block
+  .text
+    padding-top: 36px
+    width: 100%
+    max-width: 744px
+    margin: 0 auto
+
+
+.comp-moi__box
+  .btn
+    width: max-content
+    margin-top: 30px
+
+.moi-comparison
+  height: auto
+  padding: 45px 70px
+  .comp-perf__box
+    .text-blk
+      width: 100%
+      display: flex
+      justify-content: space-between
+      align-items: center
+      .title
+        margin: 0
+        text-align: center
+      .btn
+        text-align: center
+
+
+
+.moi-banner
+  width: 100%
+  height: 520px
+  background: 0 0/cover no-repeat
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  color: #ffffff
+  &__content
+    width: 100%
+    max-width: 826px
+    padding: 0 20px
+  .pre-title
+    font-family: 'RODUSsquare700', serif
+    font-size: 21px
+    font-style: normal
+    letter-spacing: 5.57px
+    line-height: normal
+    text-align: center
+    text-transform: uppercase
+    margin-bottom: 7px
+  .title
+    font-family: 'CeraGR', serif
+    font-size: 38px
+    font-weight: 700
+    font-style: normal
+    letter-spacing: normal
+    line-height: 51.19px
+    text-align: center
+    margin: 0
+
+
+
+.stability
+  width: 100%
+  .moi-title
+    margin-bottom: 20px
+  &__video
+    width: 100%
+    height: 539px
+    box-shadow: 0 0 20px #ccc
+    overflow: hidden
+    position: relative
+    .video-item
+      width: 100%
+      height: 100%
+      position: relative
+    .video-icon
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+      width: 122px
+      height: 122px
+      background-color: rgba(227, 227, 227, 0.91)
+      .fa-play
+        color: $accent
+        font-size: 42px
+        padding-left: 10px
+      &:focus
+        opacity: .2
+
+
+.industry-tabs
+  width: 100%
+  max-width: 740px
+  margin: 40px auto 70px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  &__item
+    width: 49%
+
+
+
+.industry-tab
+  padding: 0 10px 0 35px
+  border-radius: 3px
+  border: 2px solid #dcdcdc
+  background-color: #ffffff
+  display: flex
+  width: 100%
+  height: 100px
+  align-items: center
+  justify-content: flex-start
+  img
+    margin-right: 30px
+    display: none
+    &:nth-of-type(2)
+      display: block
+  .text-blk
+    display: flex
+    flex-direction: column
+    text-align: left
+    color: #000000
+    .title
+      font-family: 'Cera GR Bold', serif
+      font-size: 18px
+      font-weight: 700
+      font-style: normal
+      letter-spacing: 0.36px
+      line-height: normal
+      margin-bottom: 0
+    .text
+      font-family: 'CeraGR', serif
+      font-size: 16px
+      font-weight: 400
+      font-style: normal
+      letter-spacing: 0.32px
+      line-height: 24px
+      margin: 0
+  &.active
+    background-color: #000000
+    border: 2px solid #000000
+    img:first-of-type
+      display: block
+    img:nth-of-type(2)
+      display: none
+    .text-blk
+      color: #ffffff
+
+.leader-inner-tabs
+  margin-bottom: 75px
+
+.industry-tab-inner
+  position: relative
+  width: 100%
+  background-color: #ffffff
+  .about-top__box
+    height: 550px
+    align-items: center
+  .img-blk
+    width: 61%
+  .text-blk
+    width: 37%
+    line-height: 25px
+    padding-top: 0
+    padding-bottom: 0
+    .title
+      color: #d60514
+      font-family: 'Cera GR Bold', serif
+      font-size: 36px
+      font-weight: 700
+      font-style: normal
+      letter-spacing: normal
+      line-height: 46px
+      margin-bottom: 50px
 
 
 
 
 
 
-/*! * End Comparison Page */
+
+
+
+
+/*! * End Why Cure Page */

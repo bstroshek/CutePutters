@@ -473,6 +473,41 @@
         });
 
 
+        // WHY CURE PAGE main-tabs
+
+        $('.why-tabgroup > div').hide();
+        $('.why-tabgroup > div:first-of-type').show();
+        $('.why-tabs a').click(function(e){
+            e.preventDefault();
+            var $this = $(this),
+                tabgroup = '#'+$this.parents('.why-tabs').data('tabgroup'),
+                others = $this.closest('li').siblings().children('a'),
+                target = $this.attr('href');
+            others.removeClass('active');
+            $this.addClass('active');
+            $(tabgroup).children('div').hide();
+            $(target).show();
+
+        });
+
+
+        <!--WHY CURE PAGE leader-inner-tabs-->
+
+        $('.industry-tabgroup > div').hide();
+        $('.industry-tabgroup > div:first-of-type').show();
+        $('.industry-tabs a').click(function(e){e.preventDefault()});
+        $('.industry-tabs a').hover(function(e){
+            e.preventDefault();
+            var $this = $(this),
+                tabgroup = '#'+$this.parents('.industry-tabs').data('tabgroup'),
+                others = $this.closest('li').siblings().children('a'),
+                target = $this.attr('href');
+            others.removeClass('active');
+            $this.addClass('active');
+            $(tabgroup).children('div').hide();
+            $(target).show();
+
+        });
 
 
 
