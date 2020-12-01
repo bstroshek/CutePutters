@@ -1,11 +1,24 @@
 /*! * Start Why Cure Page */
 
+.w-hero
+  background: center/cover no-repeat, center/0 no-repeat
+  @media (max-width: 768px)
+    background: center/0 no-repeat, 100% 100%/cover no-repeat
+  @media (max-width: 375px)
+    height: 433px
+    background: center/0 no-repeat, 100% 0/cover no-repeat
+
 .why-cure-hero
   text-align: center
   color: #ffffff
   width: 100%
   max-width: 569px
   margin: 10px auto 30px
+  @media (max-width: 576px)
+    width: 270px
+    margin: 0 auto
+    @media (max-width: 375px)
+      margin: 94px auto 0
   .pre-title
     font-family: 'RODUSsquare700', serif
     font-size: 18px
@@ -15,6 +28,12 @@
     text-align: center
     text-transform: uppercase
     margin-bottom: 40px
+    @media (max-width: 576px)
+      font-size: 9px
+      font-style: normal
+      letter-spacing: 2.1px
+      line-height: 39px
+      margin-bottom: 0
   .title
     font-family: 'RODUSsquare700', serif
     font-size: 48px
@@ -22,6 +41,12 @@
     letter-spacing: 0.53px
     line-height: 62px
     text-align: center
+    @media (max-width: 576px)
+      font-size: 24px
+      font-style: normal
+      letter-spacing: 0.27px
+      line-height: 31px
+      margin-bottom: 0
   .hero-text
     font-family: 'CeraGR', serif
     font-size: 24px
@@ -30,12 +55,28 @@
     letter-spacing: 0.75px
     line-height: 40px
     text-align: center
+    @media (max-width: 576px)
+      font-size: 12px
+      font-weight: 400
+      font-style: normal
+      letter-spacing: 0.38px
+      line-height: 20px
+
+.tabs-wrap
+  @media (max-width: 768px)
+    overflow-x: scroll
 
 .why-tabs
   width: 100%
   display: flex
   align-items: center
   justify-content: center
+  @media (max-width: 768px)
+    width: 768px
+  @media (max-width: 576px)
+    width: 576px
+  @media (max-width: 375px)
+    width: 430px
   &__item
     width: 50%
     text-align: center
@@ -52,6 +93,11 @@
     background-image: linear-gradient(207deg, #333a3e 0%, #171b1d 100%)
     display: inline-block
     text-align: center
+    @media (max-width: 576px)
+      font-size: 9px
+      font-style: normal
+      letter-spacing: 1px
+      padding: 18px 0 16px
     span
       color: #d60514
     &.active
@@ -60,6 +106,12 @@
 
 
 .moi-title
+  .pre-title
+    @media (max-width: 576px)
+      font-size: 6px
+      font-style: normal
+      letter-spacing: 2px
+      margin-bottom: 0
   .title span
     display: block
   .text
@@ -67,16 +119,26 @@
     width: 100%
     max-width: 744px
     margin: 0 auto
-
+    @media (max-width: 576px)
+      font-size: 17px
+      font-weight: 700
+      font-style: normal
+      letter-spacing: normal
+      line-height: 23px
 
 .comp-moi__box
   .btn
     width: max-content
     margin-top: 30px
+    @media (max-width: 576px)
+      width: 100%
 
 .moi-comparison
   height: auto
   padding: 45px 70px
+  @media (max-width: 576px)
+    padding: 30px 5px
+    margin-bottom: 40px
   .comp-perf__box
     .text-blk
       width: 100%
@@ -86,6 +148,8 @@
       .title
         margin: 0
         text-align: center
+        @media (max-width: 768px)
+          margin-bottom: 25px
       .btn
         text-align: center
 
@@ -94,16 +158,21 @@
 .moi-banner
   width: 100%
   height: 520px
-  background: 0 0/cover no-repeat
+  background: 0 0/cover no-repeat, 0 0/0 no-repeat
   display: flex
   align-items: center
   justify-content: center
   text-align: center
   color: #ffffff
+  @media (max-width: 768px)
+    height: 470px
+    background: 0 0/0 no-repeat, -175px 0/cover no-repeat
   &__content
     width: 100%
     max-width: 826px
     padding: 0 20px
+    @media (max-width: 768px)
+      margin-top: 117px
   .pre-title
     font-family: 'RODUSsquare700', serif
     font-size: 21px
@@ -113,6 +182,10 @@
     text-align: center
     text-transform: uppercase
     margin-bottom: 7px
+    @media (max-width: 576px)
+      font-size: 11px
+      letter-spacing: 2.78px
+      margin-bottom: 10px
   .title
     font-family: 'CeraGR', serif
     font-size: 38px
@@ -122,19 +195,40 @@
     line-height: 51.19px
     text-align: center
     margin: 0
+    @media (max-width: 576px)
+      font-size: 24px
+      font-weight: 700
+      line-height: 30.6px
 
 
 
 .stability
   width: 100%
+  @media (max-width: 576px)
+    margin-bottom: 20px
   .moi-title
     margin-bottom: 20px
+    @media (max-width: 576px)
+      padding: 47px 0 0
+    .text
+      @media (max-width: 576px)
+        padding-top: 13px
+        font-size: 13px
+        font-weight: 400
+        font-style: normal
+        letter-spacing: 0.41px
+        line-height: 21px
+        margin-bottom: 0
   &__video
     width: 100%
     height: 539px
     box-shadow: 0 0 20px #ccc
     overflow: hidden
     position: relative
+    @media (max-width: 576px)
+      height: 300px
+    @media (max-width: 375px)
+      height: 158px
     .video-item
       width: 100%
       height: 100%
@@ -147,10 +241,16 @@
       width: 122px
       height: 122px
       background-color: rgba(227, 227, 227, 0.91)
+      @media (max-width: 576px)
+        width: 33px
+        height: 33px
       .fa-play
         color: $accent
         font-size: 42px
         padding-left: 10px
+        @media (max-width: 576px)
+          font-size: 13px
+          padding-left: 3px
       &:focus
         opacity: .2
 
@@ -162,10 +262,13 @@
   display: flex
   align-items: center
   justify-content: space-between
+  @media (max-width: 768px)
+    margin-top: 0
+    margin-bottom: 34px
+    padding-left: 15px
+    padding-right: 15px
   &__item
     width: 49%
-
-
 
 .industry-tab
   padding: 0 10px 0 35px
@@ -177,9 +280,15 @@
   height: 100px
   align-items: center
   justify-content: flex-start
+  @media (max-width: 576px)
+    padding: 0 0 0 0
+    height: 50px
   img
     margin-right: 30px
     display: none
+    @media (max-width: 576px)
+      margin-right: 0
+      transform: scale(.6, .6)
     &:nth-of-type(2)
       display: block
   .text-blk
@@ -195,6 +304,9 @@
       letter-spacing: 0.36px
       line-height: normal
       margin-bottom: 0
+      @media (max-width: 576px)
+        font-size: 11px
+        line-height: 16px
     .text
       font-family: 'CeraGR', serif
       font-size: 16px
@@ -203,6 +315,9 @@
       letter-spacing: 0.32px
       line-height: 24px
       margin: 0
+      @media (max-width: 576px)
+        font-size: 8px
+        line-height: 14px
   &.active
     background-color: #000000
     border: 2px solid #000000
@@ -215,21 +330,43 @@
 
 .leader-inner-tabs
   margin-bottom: 75px
-
+  @media (max-width: 768px)
+    margin-bottom: 50px
 .industry-tab-inner
   position: relative
   width: 100%
   background-color: #ffffff
+  @media (max-width: 768px)
+    padding-top: 0
   .about-top__box
     height: 550px
     align-items: center
+    @media (max-width: 1000px)
+      height: auto
+    @media (max-width: 768px)
+      flex-wrap: wrap
   .img-blk
     width: 61%
+    @media (max-width: 1000px)
+      position: relative
+    @media (max-width: 768px)
+      height: auto
+      width: 100%
+      margin-bottom: 25px
+    img
+      @media (max-width: 1000px)
+        height: auto
   .text-blk
     width: 37%
     line-height: 25px
     padding-top: 0
     padding-bottom: 0
+    @media (max-width: 1000px)
+      width: 39%
+      padding-left: 30px
+    @media (max-width: 768px)
+      width: 100%
+      padding: 0
     .title
       color: #d60514
       font-family: 'Cera GR Bold', serif
@@ -241,7 +378,41 @@
       margin-bottom: 50px
 
 
+@media (max-width: 768px)
 
+  .comp-moi
+    .container
+      padding: 0
+  .moi-title
+    padding-left: 20px
+    padding-right: 20px
+  .comp-moi__box .text-blk
+    padding-left: 20px
+    padding-right: 20px
+
+@media (max-width: 576px)
+  .comp-moi__box .img-text p
+    font-size: 15px
+    font-weight: 700
+    font-style: normal
+    letter-spacing: normal
+    line-height: 21.03px
+  .comp-moi__box .img-text
+    padding: 14px 0 0 19px
+  .comp-moi__box .title
+    font-size: 18px
+    font-weight: 700
+    font-style: normal
+    letter-spacing: normal
+    line-height: 23px
+  .comp-moi__box .text
+    font-size: 13px
+    font-weight: 400
+    font-style: normal
+    letter-spacing: 0.41px
+    line-height: 21px
+  .comp-moi
+    margin-bottom: 40px
 
 
 
