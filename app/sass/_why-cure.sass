@@ -448,8 +448,10 @@
 
 .why-cure-bottom-slider
   padding-top: 0
-  .slider-for-sm
-    position: relative
+  position: relative
+  &.series
+    @media (max-width: 567px)
+      padding-bottom: 0
 
 .why-tabgroup
   .shop-more .series__title
