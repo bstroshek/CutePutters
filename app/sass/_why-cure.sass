@@ -350,6 +350,7 @@
       height: auto
     @media (max-width: 768px)
       flex-wrap: wrap
+      justify-content: flex-start
   .img-blk
     width: 61%
     @media (max-width: 1000px)
@@ -418,7 +419,38 @@
     line-height: 21px
   .comp-moi
     margin-bottom: 40px
+  .leader-title
+    .pre-title
+      font-size: 6px
+      letter-spacing: 1.71px
+    .title
+      font-size: 18px
+      letter-spacing: 0
+      line-height: 23px
 
+.leader-inner-tabs .leader-tab
+  .title
+    color: #000000
+    font-family: 'Cera GR Bold', serif
+    font-size: 36px
+    letter-spacing: 0
+    line-height: 46px
+    margin: 0 0 50px
+    span
+      color: #D60514
+    @media (max-width: 576px)
+      font-size: 18px
+      letter-spacing: 0
+      line-height: 46px
+      margin: 0 0 15px
+  .text-blk p
+    @media (max-width: 576px)
+      font-size: 13px
+      letter-spacing: 0.41px
+      line-height: 21px
+  .btn
+    width: 100%
+    margin-top: 50px
 
 
 @media (max-width: 1400px)
@@ -430,7 +462,7 @@
 @media (max-width: 1440px)
   #leader-inner-lie
     .text-blk
-      padding-left: 116px
+      padding-left: 90px
     .img-blk
       width: 63%
       img
@@ -444,6 +476,15 @@
       width: 63%
       img
         object-position: center right
+@media (max-width: 768px)
+  #leader-inner-lie .text-blk
+    padding-left: 0
+@media (max-width: 576px)
+  #leader-inner-lie .img-blk
+    width: 100%
+    height: auto
+    margin-bottom: 25px
+
 
 
 .why-cure-bottom-slider
@@ -461,5 +502,23 @@
   .series
     @media (max-width: 768px)
       padding-bottom: 0
+
+.leader-comparison
+  margin-bottom: 117px
+  @media (max-width: 768px)
+    margin-bottom: 60px
+
+
+
+
+.series__title .title span
+  color: $accent
+
+
+
+
+
+
+
 
 /*! * End Why Cure Page */
