@@ -510,6 +510,32 @@
         });
 
 
+        //  Comparison Page mobile sliders
+
+        $('.comp-slider-1').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false,
+            arrows: true,
+            appendArrows: $('.comp-slider-1__arrows'),
+            prevArrow:'<span class="hero-slider-left"><img src="images/dest/hero-slider-left.png" alt="icon" width="20" height="40"></span>',
+            nextArrow:'<span class="hero-slider-right"><img src="images/dest/hero-slider-right.png" alt="icon" width="20" height="40"></span>'
+        });
+
+        $('.comp-slider-2').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false,
+            arrows: true,
+            appendArrows: $('.comp-slider-2__arrows'),
+            prevArrow:'<span class="hero-slider-left"><img src="images/dest/hero-slider-left.png" alt="icon" width="20" height="40"></span>',
+            nextArrow:'<span class="hero-slider-right"><img src="images/dest/hero-slider-right.png" alt="icon" width="20" height="40"></span>'
+        });
+
+
+
 
 
 
