@@ -5,7 +5,7 @@
   text-align: center
   padding: 72px 0 50px
   @media (max-width: 576px)
-    padding: 40px 0 30px
+    padding: 22px 0 30px
   .pre-title
     color: #000000
     font-family: 'RODUSsquare700', serif
@@ -16,8 +16,10 @@
     text-align: center
     text-transform: uppercase
     @media (max-width: 576px)
-      font-size: 12px
-      letter-spacing: .22px
+      font-size: 8px
+      letter-spacing: 2.67px
+      line-height: 9px
+      margin: 0
   .title
     color: #000000
     font-family: 'Cera GR Bold', serif
@@ -31,19 +33,14 @@
     span
       color: $accent
     @media (max-width: 576px)
-      font-size: 20px
-      letter-spacing: .22px
-      line-height: 25px
-
+      font-size: 17px
+      letter-spacing: 0
+      line-height: 23px
 
 .about-top
   width: 100%
   background-color: #f5f5f5
   position: relative
-  @media (max-width: 768px)
-    padding-top: 660px
-  @media (max-width: 576px)
-    padding-top: 330px
   &__box
     width: 100%
     display: flex
@@ -59,9 +56,8 @@
     bottom: 0
     @media (max-width: 768px)
       width: 100%
-      height: 660px
-    @media (max-width: 576px)
-      height: 330px
+      height: auto
+      position: relative
     @media (min-width: 1440px)
       width: 45%
     img
@@ -69,6 +65,8 @@
       height: 100%
       object-fit: cover
       object-position: bottom right
+      @media (max-width: 768px)
+        height: auto
   .text-blk
     width: 50%
     padding-left: 70px
@@ -80,7 +78,10 @@
       padding-top: 30px
       padding-bottom: 60px
     @media (max-width: 576px)
-      padding-bottom: 30px
+      padding-bottom: 40px
+      font-size: 13px
+      letter-spacing: 0
+      line-height: 21px
     @media (min-width: 1440px)
       width: 55%
 
@@ -89,6 +90,8 @@
   padding: 110px 0 60px
   @media (max-width: 768px)
     padding: 60px 0
+  @media (max-width: 576px)
+    padding: 30px 0 0
   &__title
     color: #000000
     font-family: 'Cera GR Bold', serif
@@ -99,12 +102,16 @@
     line-height: 26px
     text-align: center
     @media (max-width: 576px)
-      font-size: 20px
-      letter-spacing: .22px
-      line-height: 25px
+      font-size: 18px
+      letter-spacing: 0
+      line-height: 24px
+      max-width: 280px
+      margin: 0 auto 37px
     span
       color: #dd3541
       text-transform: uppercase
+      @media (max-width: 576px)
+        display: block
   &__box
     width: 100%
     display: flex
@@ -122,15 +129,14 @@
       @media (max-width: 768px)
         width: 100%
       @media (max-width: 576px)
-        flex-direction: column
         padding: 20px
       .icon
         margin-right: 30px
         margin-top: 10px
         @media (max-width: 576px)
-          width: 25%
+          width: 17%
           height: auto
-          margin-bottom: 15px
+          margin-right: 10px
       .title
         color: #000000
         font-family: 'Cera GR Bold', serif
@@ -142,10 +148,13 @@
         text-align: left
         margin: 0 0 5px
         @media (max-width: 576px)
-          font-size: 18px
+          font-size: 16px
+          letter-spacing: 0.67px
+          line-height: 20px
       .text
-        letter-spacing: 0.5px
-
+        font-size: 11px
+        letter-spacing: 0
+        line-height: 18px
 
 .about-history
   width: 100%
@@ -154,11 +163,13 @@
   @media (max-width: 768px)
     padding-bottom: 30px
   @media (max-width: 576px)
-    padding-bottom: 0
+    padding-bottom: 20px
   .about-title
     padding-bottom: 88px
     @media (max-width: 768px)
       padding-bottom: 40px
+    @media (max-width: 576px)
+      padding: 30px 0 32px
   &__content
     width: 100%
     .year
@@ -172,9 +183,14 @@
       padding-left: 30px
       position: relative
       @media (max-width: 576px)
-        font-size: 20px
-        line-height: 25px
-        margin: 0
+        color: #d60514
+        font-size: 36px
+        font-style: normal
+        letter-spacing: 0.75px
+        line-height: 24px
+        margin: 0 0 10px
+        padding: 0
+        text-align: center
       &:before
         content: ''
         display: block
@@ -187,18 +203,16 @@
         top: 2px
         border: 15px solid #f9f9f9
         @media (max-width: 576px)
-          width: 20px
-          height: 20px
-          border-width: 5px
-          left: -9px
-          top: 7px
+          display: none
+
   &__main
     width: 100%
     padding-left: 30px
     padding-bottom: 60px
     border-left: 2px solid #d0d0d0
     @media (max-width: 576px)
-      padding-bottom: 30px
+      padding: 0
+      border: 0
     .title
       color: #222222
       font-family: 'Cera GR Bold', serif
@@ -208,9 +222,11 @@
       line-height: 36px
       margin-bottom: 20px
       @media (max-width: 576px)
-        font-size: 18px
-        margin-bottom: 10px
+        margin-bottom: 17px
         line-height: 22px
+        font-size: 14px
+        font-weight: 700
+        text-align: center
     .history-box
       background-color: #ffffff
       display: flex
@@ -244,6 +260,10 @@
         p
           letter-spacing: 0.5px
           line-height: 26px
+          @media (max-width: 576px)
+            font-size: 11px
+            letter-spacing: 0
+            line-height: 18px
 
 
 .about-history__item:last-child .about-history__main
@@ -295,8 +315,71 @@
       opacity: 1
 
 
+.years-mobile
+  width: 100%
+  margin-bottom: 25px
+  .slick-list
+    padding: 0!important
+  .slick-track
+    width: 100%
+    display: flex
+    justify-content: space-between
+  &__item
+    display: flex!important
+    flex-direction: column
+    align-items: center
+    text-align: center
+    .year-dot
+      width: 18px
+      height: 18px
+      border-radius: 50%
+      border: 3px solid #f5f5f5
+      background-color: #dadada
+      margin-bottom: 10px
+      display: block
+      position: relative
+      transition: all .3s
+      &:after
+        content: ''
+        display: block
+        height: 2px
+        width: 46px
+        background-color: #dadada
+        position: absolute
+        right: -52px
+        top: 5px
+    &.last
+      .year-dot:after
+        display: none
+    .year-text
+      color: #000000
+      font-family: 'CeraGR', serif
+      font-size: 12px
+      font-weight: 400
+      font-style: normal
+      letter-spacing: normal
+      line-height: 24px
+  .slick-current
+    .year-dot
+      background-color: #d60514
+    .year-text
+      color: #d60514
+      font-size: 18px
+      font-weight: 700
 
 
+.about-history__content-wrap
+  position: relative
+  .slick-arrow img
+    width: 20px
+    height: 40px
+    opacity: .5
+  .hero-slider-left
+    bottom: auto
+    top: 24%
+  .hero-slider-right
+    bottom: auto
+    top: 24%
 
 
 

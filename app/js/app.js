@@ -536,6 +536,29 @@
 
 
 
+        // About Us Page sincing sliders for mobile
+
+        $(window).bind("resize", function () {
+            if ($(this).width() <= 576) {
+                $('.about-history__content').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: true,
+                    asNavFor: '.years-mobile',
+                    appendArrows: $('.about-history__arrows'),
+                    prevArrow:'<span class="hero-slider-left"><img src="images/dest/hero-slider-left.png" alt="icon" width="20" height="40"></span>',
+                    nextArrow:'<span class="hero-slider-right"><img src="images/dest/hero-slider-right.png" alt="icon" width="20" height="40"></span>'
+                });
+                $('.years-mobile').slick({
+                    slidesToShow: 6,
+                    slidesToScroll: 1,
+                    asNavFor: '.about-history__content',
+                    dots: true,
+                    centerMode: true,
+                    focusOnSelect: true
+                });
+            }
+        }).trigger('resize');
 
 
 
