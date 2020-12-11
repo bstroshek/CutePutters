@@ -1,5 +1,15 @@
 /*! * Start Comparison Page */
-
+.comp-hero
+  background: center/cover no-repeat, center/0 no-repeat
+  @media (max-width: 576px)
+    background: center/0 no-repeat, center/cover no-repeat
+    padding-bottom: 0
+    .accessories-hero__title
+      margin-top: 40px
+      margin-bottom: 76px
+      font-size: 24px
+      letter-spacing: 0.27px
+      line-height: 31px
 .comp-title
   padding: 0
   margin: 100px 0 65px
@@ -7,7 +17,7 @@
     margin: 30px 0 43px
   .pre-title
     @media (max-width: 576px)
-      font-size: 6px
+      font-size: 10px
       letter-spacing: 2px
       line-height: 6px
       margin-bottom: 7px
@@ -215,7 +225,8 @@
 .slider-arrows
   opacity: .6
   .hero-slider-left
-    display: none!important
+    bottom: auto
+    top: 16%
   .hero-slider-right
     bottom: auto
     top: 16%
@@ -223,13 +234,29 @@
     .hero-slider-right img
       width: 20px
       height: 40px
+    .hero-slider-left img
+      width: 20px
+      height: 40px
 
 .comp-shop-more
+  .series__title
+    @media (max-width: 576px)
+      margin-bottom: 20px
+  .title
+    @media (max-width: 576px)
+      margin-bottom: 0
+  .title br
+    display: none
+    @media (max-width: 576px)
+      display: block
   @media (max-width: 576px)
     margin-bottom: 0
     padding-bottom: 0
 
-
-
+@media (max-width: 576px)
+  .comp-shop-more .rx-series__slider-arrows .hero-slider-left
+    bottom: 35%
+  .comp-shop-more .rx-series__slider-arrows .hero-slider-right
+      bottom: 35%
 
 /*! * End Comparison Page */
